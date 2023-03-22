@@ -9,8 +9,6 @@
     display: flex;
     justify-content: space-between;
     background-color: #EAE0D5;
-    padding-left: 9.8vw;
-    padding-right: 9.3vw;
 }
 
 .header-first span {
@@ -24,11 +22,12 @@
 
 .header-first-item-1 {
     align-self: center;
-
+    margin-left: 135px;
 }
 
 .header-first-item-2 {
     align-self: center;
+    margin-right: 145px;
 }
 
 .header-second {
@@ -42,7 +41,7 @@
 }
 
 .header-second-item-1 img {
-    height: 2rem;
+    height: 3rem;
 }
 
 .header-second-item-5 {
@@ -57,12 +56,10 @@
 
 
 .search-bar {
+    width: 600px;
     height: 50px;
-    width: calc(100vw - 66vw);
-    border: 1px solid;
-    border-radius: 6px;
-    display: flex;
-    padding: 10px;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .search-bar img {
@@ -108,15 +105,20 @@
     }
 
     .header-first-item-1 {
-        margin-left: 25px;
+        margin-left: 2px;
     }
 
     .header-second-item-1 img {
-        margin-left: 60px;
+        margin-left: 106px;
     }
 
     .header-first-item-2 {
-        margin-right: 27px;
+        margin-right: 10px;
+    }
+
+    .header-second-item-5 img {
+        height: 21.5px;
+        margin-left: 85px;
     }
 
     .header-second {
@@ -144,6 +146,10 @@
     .header-third {
         display: none;
     }
+
+    .header-second-item-1 img {
+        height: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -153,79 +159,97 @@
         padding-left: 10vw;
         padding-right: 10vw;
     }
+
+    .header-first-item-1 {
+        align-self: center;
+        margin-left: 65px;
+    }
+
+    .header-first-item-2 {
+        align-self: center;
+        margin-right: 75px;
+    }
+
+    .search-bar {
+        width: 300px;
+        height: 40px;
+
+    }
+
+    .header-second-item-1 img {
+        height: 2.5rem;
+    }
 }
 
 
 /* =================================== CSS of Footer Component =============================================== */
 
-.footer{
+.footer {
     height: 440px;
     background-color: #22333B;
     color: #EAE0D5;
 }
 
-.footer-content{
+.footer-content {
     width: 460px;
     height: 134px;
     color: #EAE0D5;
     text-align: start;
     position: relative;
-    top :86px;
+    top: 86px;
     left: 151px;
 }
 
-.footer-content img{
+.footer-content img {
     width: 280px;
     height: 35px;
 }
 
-.social-handles{
+.social-handles {
     display: flex;
     justify-content: space-around;
     padding-right: 55%;
 }
 
-.social-handles img{
+.social-handles img {
     height: 29px;
     width: 29px;
-    
 }
 
-.copywright{
+.copywright {
     position: relative;
-    top:260px;
-    left: 30px;
+    top: 260px;
     font-size: 14px;
 }
 
 @media (max-width: 768px) {
 
-    .footer-content img{
+    .footer-content img {
         width: 302px;
         height: 38px;
     }
 
-    .footer-content{
+    .footer-content {
         width: 302px;
         height: 134px;
         color: #EAE0D5;
         text-align: start;
         position: relative;
-        top :65px;
-        left: 25px;
+        top: 65px;
+        left: 20px;
         font-size: 14px;
     }
 
-    .social-handles img{
+    .social-handles img {
         height: 24px;
         width: 24px;
-        
-    }
-    
 
-    .copywright{
+    }
+
+
+    .copywright {
         position: relative;
-        top:240px;
+        top: 240px;
         left: 0px;
         font-size: 12px;
         padding: 5px;
@@ -234,9 +258,269 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
     /* for tablets */
-    .copywright{
+    .copywright {
+        left: 80px;
+        font-size: 10px;
+        width: fit-content;
+    }
+
+    .footer-content {
+        width: 302px;
+        height: 134px;
+        color: #EAE0D5;
+        text-align: start;
+        position: relative;
+        top: 65px;
+        left: 80px;
+        font-size: 14px;
+    }
+}
+
+/* ===================================Designed for you=============================================== */
+
+.designed-for-you {
+    padding: 20px;
+    background-color: #FBF9F7;
+    height: 530px;
+}
+
+h2 {
+    margin: 50px;
+    font-family: 'PT Serif', serif;
+    color: #22333B;
+    font-weight: bold;
+}
+
+.designed-for-you-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+.designed-for-you-container div {
+    width: 238px;
+}
+
+.card-image {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-discription {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    h2 {
+        margin: 40px;
+    }
+
+    .designed-for-you-container {
+        align-content: space-evenly;
+        top: 30px;
+        flex-basis: auto;
+        row-gap: 40px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-discription {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .designed-for-you {
+        padding: 20px;
+        background-color: #FBF9F7;
+        height: 732px;
+    }
+
+    .designed-for-you h2 {
+        margin: 25px;
+        font-size: 24px;
+    }
+
+    .designed-for-you-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        row-gap: 40px;
+    }
+
+    .designed-for-you-container div {
+        width: 150px;
+    }
+
+    .card-image,
+    .card-image img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .card-discription {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+/* ========================================== WhatsApp================================================ */
+
+.frikly-whatsapp {
+    display: flex;
+    height: 530px;
+    padding-top: 82px;
+}
+
+.whatsapp-screen {
+    width: 30%;
+}
+.whatsapp-screen img{
+    position: relative;
+    left: 58px;
+}
+
+
+.whatsapp-text {
+    width: 60%;
+    text-align: left;
+    padding: 40px;
+}
+
+.whatsapp-heading {
+    color: #22333B;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'PT serif';
+}
+
+.whatsapp-para {
+    font-weight: 300;
+    font-size: 24px;
+    color: #5E503F;
+    line-height: 150%;
+}
+
+.whatsapp-text-highlight {
+    font-weight: bold;
+}
+
+.share-now {
+    border: none;
+    background: url('../../assets/icons/share-now.webp') no-repeat;
+    width: 14.5rem;
+    height: 3.5rem;
+}
+
+@media (max-width: 768px) {
+    .frikly-whatsapp {
+        display: block;
+        height: 732px;
+    }
+    .whatsapp-screen{
+        width: 100%;
+        /* text-align: center; */
+        /* display: flex;
+        justify-content: center; */
+    }
+    .whatsapp-screen img{
+        height: 240px;
+        width: 174px; 
+        position: static;
         left: 0;
-        font-size: 12px;
+    }
+    .whatsapp-text {
+        width: 100%;
+        text-align: center ;
+        padding: 10px;
+        height: 406px;
+        padding-top: 70px;
+    }
+    .whatsapp-heading {
+        color: #22333B;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'PT serif';
+    }   
+    .whatsapp-para {
+        font-weight: 300;
+        font-size: 18px;
+        color: #5E503F;
+        line-height: 150%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    .frikly-whatsapp {
+        display: flex;
+        height: 435px;
+        padding-top: 82px;
+    }
+    
+    .whatsapp-screen {
+        width: 35%;
+    }
+
+    .whatsapp-screen img{
+        height: 350px;
+        width: 230px;
+        position: relative;
+        left: 45px;
+    }
+    
+    .whatsapp-text {
+        width: 65%;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+    
+    .whatsapp-heading {
+        color: #22333B;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'PT serif';
+    }
+    
+    .whatsapp-para {
+        font-weight: 300;
+        font-size: 18px;
+        color: #5E503F;
+        line-height: 150%;
+    }
+    
+    .whatsapp-text-highlight {
+        font-weight: bold;
+    }
+    
+    .share-now {
+        border: none;
+        background: url('../../assets/icons/share-now.webp') no-repeat;
+        width: 14.5rem;
+        height: 3.5rem;
     }
 }

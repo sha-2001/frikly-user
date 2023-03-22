@@ -14,7 +14,7 @@ function Header() {
     return (
         <div className='header'>
             {/* 1 header bar */}
-            <div className="header-first">
+            <div className="header-first container-fluid">
                 <div className="header-first-item-1">
                     <img src={truck} alt='truck' />
                     <span >Enter Pincode</span> <span className='sm-hide' style={{ color: '#22333B', opacity: '0.7' }}>Change Pincode</span>
@@ -38,16 +38,13 @@ function Header() {
                 <div className="header-second-item-3 sm-hide">
                     <span>About</span>
                 </div>
-                <div className="header-second-item-4">
-                    <div className='search-bar'>
-                        <img src={lens} alt='lens'/>
-                        <p>Search for products...</p>
-                    </div>
+                <div className="header-second-item-4 ">
+                    <input className='search-bar' type="text" placeholder='Search for products...' />
                 </div>
                 <div className="header-second-item-5">
-                    <img src={person} className='sm-hide' alt='person'/>
-                    <img src={heart} className='sm-hide' alt='heart'/>
-                    <img src={cart} alt='cart'/>
+                    <img src={person} className='sm-hide' alt='person' />
+                    <img src={heart} className='sm-hide' alt='heart' />
+                    <img src={cart} alt='cart' />
                 </div>
             </div>
             {/* 3 header bar */}

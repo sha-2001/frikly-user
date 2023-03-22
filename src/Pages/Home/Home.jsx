@@ -4,6 +4,8 @@ import './home.css';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import DesignedForYou from './DesignedForYou';
+import FriklyWhatsapp from './FriklyWhatsApp';
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
             borderRadius:'20px',
             }}></div>
 
+        <FriklyWhatsapp/>
+        <DesignedForYou/>
         <Footer/>
     </div>
   )
