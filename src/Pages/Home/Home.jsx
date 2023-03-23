@@ -10,19 +10,15 @@ import ReasonsToBuy from './ReasonsToBuy';
 import OnTheWay from './OnTheWay';
 import Deal from './Deal';
 import ProMember from './ProMember';
+import Testimonial from './Testimonial';
+import BuyingInBulk from './BuyingInBulk';
+import SellOnFrikly from './SellOnFrikly';
 
 function Home() {
   return (
     <div>
       <Header />
-
-      {/* Show Top Deals */}
-
-      <div>
-        <h2 className='fw-bold sm-hide' style={{ color: '#22333B', fontFamily: 'PT Serif' }}>Shop Top Deals</h2>
-        <Deal />
-      </div>
-
+      <Deal />
       <div style={{
         height: '100vh',
         margin: '50px',
@@ -30,10 +26,13 @@ function Home() {
         borderRadius: '20px',
       }}></div>
 
-      <ReasonsToBuy />
       <OnTheWay />
+      <ReasonsToBuy />
+      <SellOnFrikly />
       <FriklyWhatsapp />
-      <ProMember/>
+      <ProMember />
+      <Testimonial />
+      <BuyingInBulk />
       <DesignedForYou />
       <Footer />
     </div>

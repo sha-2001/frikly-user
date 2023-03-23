@@ -85,7 +85,7 @@
     padding-right: 19vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 
     /* for smart phones */
     .hamburger {
@@ -152,13 +152,14 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 840px) and (max-width: 1235px) {
 
     /* for tablets */
     .header-third {
         padding-left: 10vw;
         padding-right: 10vw;
     }
+
     .header-first-item-1 {
         align-self: center;
         margin-left: 65px;
@@ -535,20 +536,24 @@ h2 {
     height: 550px;
     background-color: white;
 }
+
 .reasons-to-buy h2 {
     font-family: 'PT serif';
     margin: 100px;
 }
-.reasons-to-buy-container{
+
+.reasons-to-buy-container {
     display: flex;
     justify-content: space-around;
     padding-left: 100px;
     padding-right: 100px;
 }
-.reasons-to-buy-item{
+
+.reasons-to-buy-item {
     width: 183px;
 }
-.reasons-to-buy-image{
+
+.reasons-to-buy-image {
     background-color: #EAE0D5;
     height: 183px;
     width: 183px;
@@ -557,21 +562,25 @@ h2 {
     align-items: center;
     border-radius: 8px;
 }
-.reasons-to-buy-item p{
+
+.reasons-to-buy-item p {
     font-size: 21px;
     font-weight: 500;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1250px) {
-    .reasons-to-buy-container{
+    .reasons-to-buy-container {
         display: flex;
         justify-content: space-around;
         padding-left: 70px;
         padding-right: 70px;
     }
-    .reasons-to-buy-item{
+
+    .reasons-to-buy-item {
         width: 150px;
     }
-    .reasons-to-buy-image{
+
+    .reasons-to-buy-image {
         background-color: #EAE0D5;
         height: 135px;
         width: 135px;
@@ -580,11 +589,13 @@ h2 {
         align-items: center;
         border-radius: 8px;
     }
-    .reasons-to-buy-item p{
+
+    .reasons-to-buy-item p {
         font-size: 16px;
         font-weight: 500;
     }
 }
+
 @media (max-width: 768px) {
     .reasons-to-buy {
         height: 550px;
@@ -592,12 +603,14 @@ h2 {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .reasons-to-buy h2 {
         font-family: 'PT serif';
         margin: 100px;
         display: none;
     }
-    .reasons-to-buy-container{
+
+    .reasons-to-buy-container {
         display: flex;
         justify-content: space-evenly;
         padding-left: 0px;
@@ -606,10 +619,12 @@ h2 {
         flex-wrap: wrap;
         gap: 22px;
     }
-    .reasons-to-buy-item{
+
+    .reasons-to-buy-item {
         width: 150px;
     }
-    .reasons-to-buy-image{
+
+    .reasons-to-buy-image {
         background-color: #EAE0D5;
         height: 124px;
         width: 145px;
@@ -618,11 +633,13 @@ h2 {
         align-items: center;
         border-radius: 8px;
     }
-    .reasons-to-buy-image img{
+
+    .reasons-to-buy-image img {
         height: 55px;
         width: 60px;
     }
-    .reasons-to-buy-item p{
+
+    .reasons-to-buy-item p {
         font-size: 18px;
         font-weight: 500;
     }
@@ -683,22 +700,22 @@ h2 {
         padding-top: 60px;
 
     }
-    
+
     .on-the-way-banner {
         width: 100%;
         text-align: center;
         position: static;
-        
+
         color: #5E503F;
     }
-    
+
     .on-the-way-items {
         display: block;
         height: 85%;
         width: 100%;
         padding-top: 30px;
     }
-    
+
     .on-the-way-items-row-1 {
         display: flex;
         flex-wrap: wrap;
@@ -706,7 +723,7 @@ h2 {
         height: 50%;
         width: 100%;
     }
-    
+
     .on-the-way-items-row-2 {
         display: flex;
         flex-wrap: wrap;
@@ -715,17 +732,17 @@ h2 {
         height: 50%;
         width: 100%;
     }
-    
+
     .on-the-way-card {
         height: 130px;
         width: 165px;
     }
-    
+
     .on-the-way-card img {
         height: 55px;
         margin-bottom: 20px;
     }
-    
+
     .on-the-way-card p {
         font-size: 14px;
         font-weight: 500;
@@ -742,12 +759,15 @@ h2 {
         left: 88px;
         color: #5E503F;
     }
-    .on-the-way-banner h1{
+
+    .on-the-way-banner h1 {
         font-size: 24px;
     }
-    .on-the-way-banner p{
+
+    .on-the-way-banner p {
         font-size: 11px;
     }
+
     .on-the-way-items {
         width: 60%;
         padding-left: 10px;
@@ -780,51 +800,142 @@ h2 {
 }
 
 /* ===================================== Show Top Deals ============================================ */
-
-.deal-component {
-    height: 440px;
-}
-
-.deals-card {
-    height: 170px;
+.deals-image{
     width: 200px;
-    background-image: url('../../assets/icons/deals-background.webp');
-    padding: 10px;
+    height: 170px;
+    border-radius: 5px;
 }
-.deals-label{
-    font-size: 12px;
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    .deals-image{
+        width: 130px;
+        height: 110px;
+    }
 }
-.deals-amount-number{
-    font-size: 35px;
-    font-weight: 500;
-    padding-top: 5px;
-}
-.deals-amount-text{
-    padding-top: 5px;
-    font-size: 24px;
 
+/* ================================== Become a Pro member ========================================= */
+.pro-member{
+    height: 525px;
+    background-color: #FBF9F7;
+}
+.pro-member img{
+    width: 1220px;
+    height: 365px;
+    position: relative;
+    left: 150px;
+    top: 80px;
+}
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    .pro-member img{
+        width: 650px;
+        height: 250px;
+        position: relative;
+        left: 83px;
+        top: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .pro-member{
+        display: flex;
+        align-items: center;
+    }
+    .pro-member img{
+        width: 100%;
+        height: 75%;
+        position: static;
+    }
+}
+
+
+
+/* ================================= Testimonial ================================================= */
+.testimonial {
+    height: 1000px;
+}
+
+.testimonial h2 {
+    color: #22333B;
+    font-family: 'PT Serif';
+}
+
+.testimonial-container {
+    position: relative;
+    left: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    width: 80%;
+}
+
+.testimonial-card {
+    background-color: #EAE0D5;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 357px;
+    height: 250px;
+    text-align: left;
+    padding: 20px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1250px) {
-    .deals-card {
-        height: 145px;
-        width: 115px;
-        background-image: url('../../assets/icons/deals-background.webp');
-      
+    .testimonial-container {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
     }
-    .deals-title{
-        font-size: 14px;
+
+    .testimonial-card {
+        background-color: #EAE0D5;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        width: 220px;
+        height: 250px;
+        text-align: left;
+        padding: 10px;
     }
-    .deals-label{
+
+    .testimonial-card p {
         font-size: 12px;
     }
-    .deals-amount-number{
-        font-size: 24px;
-        font-weight: 500;
-    }
-    .deals-amount-text{
-        padding-top: 5px;
-        font-size: 14px;
 
+    .testimonial-card h6 {
+        font-size: 14px;
     }
+}
+
+/* ================================ Buying In Bulk =============================================== */
+.buying-in-bulk {
+    height: 403px;
+    padding: 61px 104px;
+}
+
+.buying-in-bulk img {
+    height: 277px;
+    width: 1232px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    .buying-in-bulk img {
+        height: 200px;
+        width: 660px;
+    }
+
+    .buying-in-bulk {
+        height: 403px;
+        padding: 90px 84px;
+    }
+
+}
+
+/* ================================= Sell on Frikly ================================================ */
+.sell-on-frikly {
+    height: 800px;
+    background-color: #FBF9F7;
 }
