@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 // importing assets
-import cart from '../assets/icons/cart.webp';
+import cartMobile from '../assets/icons/cart.webp';
+import cartDesktop from '../assets/icons/card-desktop.webp'
 import heart from '../assets/icons/heart.webp';
 import location from '../assets/icons/location.webp';
 import person from '../assets/icons/person.webp';
@@ -33,10 +35,10 @@ function Header() {
                     <img src={frikly} alt='frikly' />
                 </div>
                 <div className="header-second-item-2 sm-hide">
-                    <span>Home</span>
+                    <span><Link className='link' to="/">Home</Link></span>
                 </div>
                 <div className="header-second-item-3 sm-hide">
-                    <span>About</span>
+                    <span><Link className='link' to='/about'>About</Link></span>
                 </div>
                 <div className="header-second-item-4 ">
                     <input className='search-bar' type="text" placeholder='Search for products...' />
@@ -44,7 +46,8 @@ function Header() {
                 <div className="header-second-item-5">
                     <img src={person} className='sm-hide' alt='person' />
                     <img src={heart} className='sm-hide' alt='heart' />
-                    <img src={cart} alt='cart' />
+                    <img className='d-none d-md-block' src={cartDesktop} alt='cart' />
+                    <img className='d-block  d-md-none' src={cartMobile} alt='cart' />
                 </div>
             </div>
             {/* 3 header bar */}

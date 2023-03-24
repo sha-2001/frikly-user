@@ -2,8 +2,6 @@ import React from 'react'
 
 import './home.css';
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import DesignedForYou from './DesignedForYou';
 import FriklyWhatsapp from './FriklyWhatsApp';
 import ReasonsToBuy from './ReasonsToBuy';
@@ -13,11 +11,12 @@ import ProMember from './ProMember';
 import Testimonial from './Testimonial';
 import BuyingInBulk from './BuyingInBulk';
 import SellOnFrikly from './SellOnFrikly';
+import HeroBanner from './HeroBanner';
 
 function Home() {
   return (
     <div>
-      <Header />
+      <HeroBanner/>
       <Deal />
       <div style={{
         height: '100vh',
@@ -34,7 +33,6 @@ function Home() {
       <Testimonial />
       <BuyingInBulk />
       <DesignedForYou />
-      <Footer />
     </div>
   )
 }
