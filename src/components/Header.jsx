@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import OffcanvasMenu from './OffcanvasMenu';
+
 // importing assets
 import cartMobile from '../assets/icons/cart.webp';
 import cartDesktop from '../assets/icons/card-desktop.webp'
@@ -53,31 +55,31 @@ function Header() {
             {/* 3 header bar */}
             <div className="header-third">
                 <div className="header-third-item-1">
-                    New Arrivals
+                    <OffcanvasMenu text='New Arrivals' />
                 </div>
                 <div className="header-third-item-2">
-                    Chairs
+                    <OffcanvasMenu text='Chairs' />
                 </div>
                 <div className="header-third-item-3">
-                    Sofas
+                    <OffcanvasMenu text='Sofas' />
                 </div>
                 <div className="header-third-item-4">
-                    Tables
+                    <OffcanvasMenu text='Tables' />
                 </div>
                 <div className="header-third-item-5">
-                    Beds
+                    <OffcanvasMenu text='Beds' />
                 </div>
                 <div className="header-third-item-6">
-                    Storage
+                    <OffcanvasMenu text='Storage' />
                 </div>
                 <div className="header-third-item-7">
-                    Decor
+                    <OffcanvasMenu text='Decor' />
                 </div>
                 <div className="header-third-item-8">
-                    Kitchen
+                    <OffcanvasMenu text='Kitchen' />
                 </div>
                 <div className="header-third-item-9">
-                    Garden
+                    <OffcanvasMenu text='Garden' />
                 </div>
             </div>
         </div>

@@ -1,5 +1,13 @@
 /* ======================================= CSS of Header Component================================ */
 
+.offcanvas-trigger{
+    background-color: black;
+    color: white;
+}
+.offcanvas-trigger:hover{
+    background-color: #22333B;
+}
+
 .header {
     width: 100%;
 }
@@ -84,6 +92,7 @@
     padding-left: 19vw;
     padding-right: 19vw;
 }
+
 
 @media (max-width: 840px) {
 
