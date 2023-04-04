@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-import OffcanvasMenu from './OffcanvasMenu';
+import MainMenu from './MainMenu';
+import Cart from './Cart';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 // importing assets
 import cartMobile from '../assets/icons/cart.webp';
@@ -11,10 +16,15 @@ import location from '../assets/icons/location.webp';
 import person from '../assets/icons/person.webp';
 import truck from '../assets/icons/truck.webp';
 import frikly from '../assets/icons/frikly.webp';
-import lens from '../assets/icons/lens.webp';
-import hamburger from '../assets/icons/hamburger.webp';
+
 
 function Header() {
+
+    const [cartShow, setCartShow] = useState(false);
+
+    let cartOpen = () => setCartShow(true);
+    let cartClose = () => setCartShow(false);
+
     return (
         <div className='header'>
             {/* 1 header bar */}
@@ -30,8 +40,8 @@ function Header() {
             </div>
             {/* 2 header bar */}
             <div className="header-second">
-                <div className='hamburger'>
-                    <img src={hamburger} alt='hamburger'></img>
+                <div>
+                    <MainMenu />
                 </div>
                 <div className="header-second-item-1">
                     <img src={frikly} alt='frikly' />
@@ -43,43 +53,48 @@ function Header() {
                     <span><Link className='link' to='/about'>About</Link></span>
                 </div>
                 <div className="header-second-item-4 ">
-                    <input className='search-bar' type="text" placeholder='Search for products...' />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} style={{
+                        position:"relative",
+                        left : '30px'
+                    }}/>
+                    <input className='search-bar ps-5' type="text" placeholder='Search for products...' />
                 </div>
                 <div className="header-second-item-5">
                     <img src={person} className='sm-hide' alt='person' />
                     <img src={heart} className='sm-hide' alt='heart' />
-                    <img className='d-none d-md-block' src={cartDesktop} alt='cart' />
-                    <img className='d-block  d-md-none' src={cartMobile} alt='cart' />
+                    <img style={{ backgroundColor: 'white' }} onClick={cartOpen} className='d-none d-md-block offcanvas-trigger' src={cartDesktop} alt='cart' />
+                    <img style={{ backgroundColor: 'white' }} onClick={cartOpen} className='d-block  d-md-none offcanvas-trigger' src={cartMobile} alt='cart' />
+                    <Cart cartClose={cartClose} show={cartShow} showClose={cartClose} />
                 </div>
             </div>
             {/* 3 header bar */}
             <div className="header-third">
                 <div className="header-third-item-1">
-                    <OffcanvasMenu text='New Arrivals' />
+                    New Arrivals
                 </div>
                 <div className="header-third-item-2">
-                    <OffcanvasMenu text='Chairs' />
+                    Chairs
                 </div>
                 <div className="header-third-item-3">
-                    <OffcanvasMenu text='Sofas' />
+                    Sofas
                 </div>
                 <div className="header-third-item-4">
-                    <OffcanvasMenu text='Tables' />
+                    Tables
                 </div>
                 <div className="header-third-item-5">
-                    <OffcanvasMenu text='Beds' />
+                    Beds
                 </div>
                 <div className="header-third-item-6">
-                    <OffcanvasMenu text='Storage' />
+                    Storage
                 </div>
                 <div className="header-third-item-7">
-                    <OffcanvasMenu text='Decor' />
+                    Decor
                 </div>
                 <div className="header-third-item-8">
-                    <OffcanvasMenu text='Kitchen' />
+                    Kitchen
                 </div>
                 <div className="header-third-item-9">
-                    <OffcanvasMenu text='Garden' />
+                    Garden
                 </div>
             </div>
         </div>

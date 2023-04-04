@@ -13,7 +13,8 @@ import BuyingInBulk from './BuyingInBulk';
 import SellOnFrikly from './SellOnFrikly';
 import HeroBanner from './HeroBanner';
 
-function Home() {
+function Home(props) {
+  props.paymentClose()
   return (
     <div>
       <HeroBanner/>

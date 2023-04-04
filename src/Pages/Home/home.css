@@ -78,8 +78,9 @@
     margin-right: 10px;
 }
 
-.hamburger {
-    display: none;
+.hamburger img{
+    height: 24px;
+    width: 30px;
 }
 
 .header-third {
@@ -1056,4 +1057,21 @@ h2 {
         align-items: center;
         height: 673px;
     }
+}
+
+/* =================================== Offcanvas ================================================= */
+.department-heading{
+    cursor: pointer;
+    height:50px;
+    border-radius: 5px;
+}
+
+.canvas-hover{
+    height: 50px;
+    padding:8px 20px;
+    font-size: 18px;
+}
+
+.canvas-hover:hover{
+    background-color:#D8D8D8 !important ;
 }

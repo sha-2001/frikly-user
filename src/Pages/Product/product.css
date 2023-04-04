@@ -1,0 +1,56 @@
+.product-page{
+    height: 800px;
+}
+.product-card{
+    width: 279px;
+    height: 554px;
+    /* background-color: gray; */
+    text-align: left;
+    margin:10px ;
+    padding: 10px;
+}
+.main-image{
+    width: 282px;
+    height: 277px;
+}
+.option-image{
+    height: 46px;
+    width: 46px;
+}
+.main-image-container{
+
+}
+.option-image-container{
+    border: 1px solid gray;
+    border-radius: 5.5px;
+}
+.card-title{
+    font-style: normal;
+    font-size: 17.5px;
+}
+.mrp{
+    color: #797979;
+    font-size: 1rem;
+}
+.card-delivery{
+    color: #10A728;
+    font-size: 11px;
+}
+.text-cross{
+    background-color: #22333B;
+    color: white;
+    border-radius: 2.2px;
+    font-size: 13px;
+}
+.per-piece-digits{
+    font-size: 33px;
+    color: #C6AC8F;
+    font-weight: 500;
+}
+.per-piece-text{
+    font-size: 13px;
+    font-weight: 400;
+}
+.compare{
+    border-top: .3px solid #d8d2d2;
+}

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import frikly_whatsapp from '../../assets/icons/frikly-whatsapp.webp'
-import share_now from '../../assets/icons/share-now.webp'
 
 function FriklyWhatsapp() {
     return (
