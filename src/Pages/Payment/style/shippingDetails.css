@@ -1,0 +1,25 @@
+.shipping-details{
+    text-align: left;
+}
+
+.shipping-details-container div{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.city-pincode{
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px){
+    .city-pincode{
+        display: block;
+    }
+}
