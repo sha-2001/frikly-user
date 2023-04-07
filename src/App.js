@@ -6,8 +6,9 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './Pages/About/About';
-import Product from './Pages/Product/Product';
 import Payment from './Pages/Payment/Payment';
+import ProductsPage from './Pages/Product/ProductsPage';
+import SingleProduct from './Pages/Product/SingleProduct';
 
 
 import './App.css';
@@ -27,8 +28,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home paymentClose={paymentClose}/>} />
           <Route exact path='/about' element={<About />} />
-          <Route exact path='/product' element={<Product />} />
+          <Route exact path='/products' element={<ProductsPage />} />
           <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
+          <Route exact path='/singleproduct' element={<SingleProduct/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

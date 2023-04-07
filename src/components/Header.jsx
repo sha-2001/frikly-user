@@ -33,7 +33,7 @@ function Header() {
                     <img src={truck} alt='truck' />
                     <span >Enter Pincode</span> <span className='sm-hide' style={{ color: '#22333B', opacity: '0.7' }}>Change Pincode</span>
                 </div>
-                <div className="header-first-item-2">
+                <div className="header-first-item-2 ">
                     <img src={location} alt='location' />
                     <span>Order Tracking</span>
                 </div>
@@ -53,11 +53,7 @@ function Header() {
                     <span><Link className='link' to='/about'>About</Link></span>
                 </div>
                 <div className="header-second-item-4 ">
-                    <FontAwesomeIcon icon={faMagnifyingGlass} style={{
-                        position:"relative",
-                        left : '30px'
-                    }}/>
-                    <input className='search-bar ps-5' type="text" placeholder='Search for products...' />
+                    <input className='search-bar ps-2' type="text" placeholder='Search for products...' />
                 </div>
                 <div className="header-second-item-5">
                     <img src={person} className='sm-hide' alt='person' />

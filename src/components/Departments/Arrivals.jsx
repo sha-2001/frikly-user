@@ -25,7 +25,7 @@ function Arrivals(props) {
         <FontAwesomeIcon icon={faArrowLeft}/> Back To Departments</p>
       <hr />
       <h3>{props.text}</h3>
-      <p><Link to='/product' onClick={categoryClick}>Category 1</Link></p>
+      <p><Link to='/products' onClick={categoryClick}>Category 1</Link></p>
       <p>Category 2</p>
     </div>
   )

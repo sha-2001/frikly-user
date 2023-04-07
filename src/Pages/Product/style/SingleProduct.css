@@ -1,0 +1,30 @@
+.similar-products{
+    text-align: left;
+}
+
+.similar-products h2{
+    position: relative;
+    left: 95px;
+    display: inline-block;
+}
+.similar-products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+    .similar-products-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        row-gap: 20px;
+        padding-left: 0px;
+    }
+    .similar-products h2{
+        position: relative;
+        left: -30px;
+        display: inline-block;
+    }
+}

@@ -28,7 +28,7 @@ let PersonalDetails = () => {
             <input class="form-control ms-2" type="search" name='whatsapp' ></input>
           </div>
           <div className="row mt-3">
-            <div className="col-1">
+            <div className="col-1 me-md-2 me-lg-0 fs-md-[20px]">
               <input class="form-check-input" type="checkbox" />
             </div>
             <div className="col p-0" style={{ textAlign: "start", fontWeight: "300" }}>
