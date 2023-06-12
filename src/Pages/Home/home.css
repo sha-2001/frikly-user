@@ -30,52 +30,53 @@
 
 .header-first-item-1 {
     align-self: center;
-    margin-left: 135px;
+    margin-left: 4vw;
 }
 
 .header-first-item-2 {
     align-self: center;
-    margin-right: 145px;
+    margin-right: 3vw;
 }
 
 .header-second {
     display: flex;
-    justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding-left: 9.5vw;
-    padding-right: 9.7vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     width: 100%;
+    gap: .4rem;
 }
 
-.header-second-item-1 img {
-    height: 3rem;
+.normal-bold{
+    /* to use it in header little big and little bold */
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-.header-second-item-5 {
-    width: 120px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-second-item-5 img {
-    height: 21.5px;
-}
-
-
-.search-bar {
-    width: 600px;
+.header2-logos {
     height: 50px;
-    border-radius: 3px;
-    padding: 5px;
+    width: 50px;
+    color: gray;
 }
 
-.search-bar img {
-    height: 19px;
-    width: 19px;
-    position: relative;
-    top: 5px;
-    margin-right: 10px;
+.logo-text{
+    /* text to use below logos in header */
+    font-size: .8rem;
+    color: gray;
+}
+
+.header-searchbar{
+    height: 2.7rem;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddada;
+    /* outline: none; */
+}
+.header-searchbar::placeholder{
+    font-size: 0.8rem;
 }
 
 .hamburger img{
@@ -86,14 +87,11 @@
 .header-third {
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: space-around;
     height: 45px;
-    align-items: center;
-    padding-left: 19vw;
-    padding-right: 19vw;
+    width: 100%;
+    padding-left: 12vw;
+    padding-right: 12vw;
 }
-
 
 @media (max-width: 840px) {
 
@@ -126,22 +124,12 @@
         margin-right: 10px;
     }
 
-    .header-second-item-5 img {
-        height: 21.5px;
-        margin-left: 85px;
-    }
-
     .header-second {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
-    .header-second-item-4 {
-        order: 3;
-        flex: 1 0 100%;
     }
 
     .search-bar {
@@ -157,9 +145,6 @@
         display: none;
     }
 
-    .header-second-item-1 img {
-        height: 2rem;
-    }
 }
 
 @media screen and (min-width: 840px) and (max-width: 1235px) {
@@ -170,25 +155,6 @@
         padding-right: 10vw;
     }
 
-    .header-first-item-1 {
-        align-self: center;
-        margin-left: 65px;
-    }
-
-    .header-first-item-2 {
-        align-self: center;
-        margin-right: 75px;
-    }
-
-    .search-bar {
-        width: 300px;
-        height: 40px;
-
-    }
-
-    .header-second-item-1 img {
-        height: 2.5rem;
-    }
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-import frickly from '../../assets/icons/frikly.webp'
+// import frickly from '../../assets/icons/frikly.webp'
 import './style/payment.css'
 import './style/paymentHeader.css'
 import './style/personalDetails.css'
@@ -16,7 +16,7 @@ let PaymentHeader = () => {
     <>
       <div className="payment-header">
         <div className="frickly-logo">
-          <img src={frickly} alt="frickly" />
+          {/* <img src={frickly} alt="frickly" /> */}
         </div>
         <div className="payment-nav">
           <p>Payment Details > Shopping Details > Payment Info</p>

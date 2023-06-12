@@ -4,7 +4,7 @@ import { faArrowLeft, faCircleUser, faBoxOpen, faTag, faCouch, faEye, faHeart, f
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import hamburger from '../assets/icons/hamburger.webp';
-import frikly from '../assets/icons/frikly.webp';
+// import frikly from '../assets/icons/frikly.webp';
 
 // importing departments 
 import Arrivals from './Departments/Arrivals';
@@ -96,7 +96,7 @@ function MainMenu(props) {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title >
-            <img src={frikly} alt="frikly" style={{ height: "2.5rem" }} />
+            {/* <img src={frikly} alt="frikly" style={{ height: "2.5rem" }} /> */}
             {/* <hr /> */}
           </Offcanvas.Title>
         </Offcanvas.Header>
