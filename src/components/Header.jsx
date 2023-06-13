@@ -23,6 +23,12 @@ import Catalogue from '../assets/icons/catalogue.gif';
 function Header() {
 
     const [cartShow, setCartShow] = useState(false);
+    let [showCategory, setShowCategory] = useState(false); // keep check whether category prompt is open or not 
+
+    // const handleHover = () => {
+    //     // function to show category prompt
+    //     setShowCategory(!showCategory);
+    // }
 
     let cartOpen = () => setCartShow(true);
     let cartClose = () => setCartShow(false);
@@ -55,7 +61,7 @@ function Header() {
                         </div>
                         <div className="col-2 d-flex justify-content-center align-items-center fw-bold"
                          style={{
-                            'backgroundColor':"black",
+                            'backgroundColor':"#22333B",
                             "color":"white",
                             "borderRadius" : "50%",
                             "height" : "50px",
@@ -109,16 +115,88 @@ function Header() {
             {/* 3 header bar */}
             <div className="header-third container-fluid">
                 <div className="row" style={{"height":"100%"}}>
-                    <div className="col-2 d-flex align-items-center justify-content-center">Sanitaryware & Bath</div>
-                    <div className="col d-flex align-items-center justify-content-center">Hardware</div>
-                    <div className="col-2 d-flex align-items-center justify-content-center">Home Appliances</div>
-                    <div className="col-2 d-flex align-items-center justify-content-center">Laminates and Mica</div>
-                    <div className="col d-flex align-items-center justify-content-center">Beds</div>
-                    <div className="col d-flex align-items-center justify-content-center">Storage</div>
-                    <div className="col d-flex align-items-center justify-content-center">Decor</div>
-                    <div className="col d-flex align-items-center justify-content-center">Kitchen</div>
+                    <div className="col-2 subcat subcat-hover d-flex align-items-center justify-content-center"  onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Sanitaryware & Bath</div>
+                    <div className="col subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Hardware</div>
+                    <div className="col-2 subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Home Appliances</div>
+                    <div className="col-2 subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Laminates and Mica</div>
+                    <div className="col subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Beds</div>
+                    <div className="col subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Storage</div>
+                    <div className="col subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Decor</div>
+                    <div className="col subcat subcat-hover d-flex align-items-center justify-content-center" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>{setShowCategory(false)}}>Kitchen</div>
                 </div>
             </div>
+            {showCategory 
+            &&  
+            <div className="category-div container-fluid" onMouseEnter={()=>setShowCategory(true)} onMouseLeave={()=>setShowCategory(false)}>
+                <div className="row" style={{height:"100%"}}>
+                    <div className="col"  style={{backgroundColor:"white"}}>
+                        <p className='fw-bold'>Channel & Hinges</p>
+                        <ul>
+                            <li>Drawer Channels</li>
+                            <li>Tandem Box</li>
+                            <li>Drawer System</li>
+                            <li>Soft Close Channels</li>
+                            <li>Auto Close & Soft Close Hinges</li>
+                            <li>SS Hinges</li>
+                        </ul>
+                    </div>
+                    <div className="col" style={{backgroundColor:"#EAE0D580"}}>
+                        <p className='fw-bold'>Locks</p>
+                        <ul>
+                            <li>Drawer & Cupboard Lock</li>
+                            <li>Lock Bodies & Cylinder</li>
+                            <li>Cylindrical Locks</li>
+                            <li>Main Door and Rim Locks</li>
+                            <li>Digital Locks</li>
+                            <li>Padlocks</li>
+                            <li>Mortise Locks</li>
+                        </ul>
+                    </div>
+                    <div className="col" style={{backgroundColor:"white"}}>
+                        <p className='fw-bold'>Door Hardware</p>
+                        <ul>
+                            <li>Door Closure</li>
+                            <li>Towerbolts</li>
+                            <li>Aldrops / Latches</li>
+                            <li>Mortise Handles</li>
+                            <li>Pull Handles</li>
+                            <li>Gas Pumps & Lifters</li>
+                            <li>Door Accessories</li>
+                        </ul>
+                    </div>
+                    <div className="col" style={{backgroundColor:"#EAE0D580"}}>
+                        <p className='fw-bold'>Glass Fittings & Hardware</p>
+                        <ul>
+                            <li>Glass Sliding Fittings</li>
+                            <li>Glass Spider Fittings</li>
+                            <li>Glass Accessories</li>
+                            <li>Glass Patch Fittings</li>
+                            <li>Floor Springs</li>
+                        </ul>
+                    </div>
+                    <div className="col" style={{backgroundColor:"white"}}>
+                        <p className='fw-bold'>Kitchen Hardware</p>
+                        <ul>
+                            <li>Pull Outs</li>
+                            <li>Wicker Baskets</li>
+                            <li>Corner Unit</li>
+                            <li>Drawer Organizer</li>
+                            <li>Roller Shutter</li>
+                        </ul>
+                    </div>
+                    <div className="col" style={{backgroundColor:"#EAE0D580"}}>
+                        <p className='fw-bold'>Wardrobe Fittigs</p>
+                        <ul>
+                            <li>Wardrobe Sliding System</li>
+                            <li>Wardrobe Fitting</li>
+                            <li>Bottom Track System</li>
+                            <li>Top Track System</li>
+                            <li>Wardrobe Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            }
         </div>
     )
 }

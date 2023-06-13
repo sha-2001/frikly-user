@@ -21,6 +21,7 @@
 
 .header-first span {
     margin-left: .5rem;
+    color: #22333B;
 }
 
 .header-first img {
@@ -85,12 +86,72 @@
 }
 
 .header-third {
-    background-color: black;
+    background-color: #22333B;
     color: white;
     height: 45px;
     width: 100%;
     padding-left: 12vw;
     padding-right: 12vw;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* Hover effects for categories */
+.subcat {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .subcat:hover {
+    color: #C6AC8F;
+  }
+  
+  .subcat::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #C6AC8F;
+  }
+  
+  .subcat-hover::before {
+    width: 0%;
+    bottom: 1px;
+  }
+  
+  .subcat-hover:hover::before {
+    width: 100%;
+  }
+  
+
+/* ///////////////////////////////////////////////////// */
+
+.category-div{
+    height: 40vh;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+}
+
+.category-div .col {
+    padding: .5rem;
+}
+
+.category-div p{
+    text-align: left;
+    font-size: .9rem;
+    color: #22333B;
+}
+.category-div ul{
+    padding: 0;
+}
+.category-div li{
+    list-style: none;
+    font-size: .9rem;
+    text-align: left;
+    color: #797979;
+    margin-bottom: .3rem;
 }
 
 @media (max-width: 840px) {
