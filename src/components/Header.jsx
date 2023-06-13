@@ -73,7 +73,7 @@ function Header() {
                                     <img className='ms-3' src={Catalogue} style={{"height" : "35px"}}  alt="" />
                                 </div>
                                 <div className="row">
-                                    <p className='logo-text'>Catalogue</p>
+                                    <p className='logo-text' style={{color:'black'}}>Catalogue</p>
                                 </div>
                             </div>
                             <div className="col">
