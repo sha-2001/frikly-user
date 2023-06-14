@@ -1,0 +1,48 @@
+.sidebar{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+
+.sidebar--open{
+    transform: translateX(0%);
+}
+
+.sidebar-header{
+    height: 65px;
+    background-color: #22333B;
+}
+
+.sidebar-cheapest-quote{
+    height: 77px;
+    background-color: #EAE0D5;
+}
+
+.brand-cat ,.wishlist-cart, .login-seller{
+    height: 140px;
+    border-bottom: 1px solid rgb(235, 231, 231);
+}
+
+.about-support{
+    height: 140px;
+}
+
+.sidebar-signin{
+    width: 208px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #EAE0D5;
+    margin-top: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.sidebar-signin:active {
+	transform: scale(1.1);
+	transition: .1s;
+}

@@ -1,222 +1,6 @@
 /* ======================================= CSS of Header Component================================ */
 
-.offcanvas-trigger{
-    background-color: black;
-    color: white;
-}
-.offcanvas-trigger:hover{
-    background-color: #22333B;
-}
 
-.header {
-    width: 100%;
-}
-
-.header-first {
-    height: 44px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #EAE0D5;
-}
-
-.header-first span {
-    margin-left: .5rem;
-    color: #22333B;
-}
-
-.header-first img {
-    height: 1rem;
-}
-
-
-.header-first-item-1 {
-    align-self: center;
-    margin-left: 4vw;
-}
-
-.header-first-item-2 {
-    align-self: center;
-    margin-right: 3vw;
-}
-
-.header-second {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    width: 100%;
-    gap: .4rem;
-}
-
-.normal-bold{
-    /* to use it in header little big and little bold */
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.header2-logos {
-    height: 50px;
-    width: 50px;
-    color: gray;
-}
-
-.logo-text{
-    /* text to use below logos in header */
-    font-size: .8rem;
-    color: gray;
-}
-
-.header-searchbar{
-    height: 2.7rem;
-    width: 100%;
-    padding: 5px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: 1px solid #dddada;
-    /* outline: none; */
-}
-.header-searchbar::placeholder{
-    font-size: 0.8rem;
-}
-
-.hamburger img{
-    height: 24px;
-    width: 30px;
-}
-
-.header-third {
-    background-color: #22333B;
-    color: white;
-    height: 45px;
-    width: 100%;
-    padding-left: 12vw;
-    padding-right: 12vw;
-}
-
-/* ///////////////////////////////////////////////////// */
-
-/* Hover effects for categories */
-.subcat {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-  }
-  
-  .subcat:hover {
-    color: #C6AC8F;
-  }
-  
-  .subcat::before {
-    transition: 300ms;
-    height: 3px;
-    content: "";
-    position: absolute;
-    background-color: #C6AC8F;
-  }
-  
-  .subcat-hover::before {
-    width: 0%;
-    bottom: 1px;
-  }
-  
-  .subcat-hover:hover::before {
-    width: 100%;
-  }
-  
-
-/* ///////////////////////////////////////////////////// */
-
-.category-div{
-    height: 40vh;
-    z-index: 1;
-    position: absolute;
-    background-color: white;
-}
-
-.category-div .col {
-    padding: .5rem;
-}
-
-.category-div p{
-    text-align: left;
-    font-size: .9rem;
-    color: #22333B;
-}
-.category-div ul{
-    padding: 0;
-}
-.category-div li{
-    list-style: none;
-    font-size: .9rem;
-    text-align: left;
-    color: #797979;
-    margin-bottom: .3rem;
-}
-
-@media (max-width: 840px) {
-
-    /* for smart phones */
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger img {
-        height: 18px;
-    }
-
-    .sm-hide {
-        display: none;
-    }
-
-    .header-first {
-        font-size: 10px;
-    }
-
-    .header-first-item-1 {
-        margin-left: 2px;
-    }
-
-    .header-second-item-1 img {
-        margin-left: 106px;
-    }
-
-    .header-first-item-2 {
-        margin-right: 10px;
-    }
-
-    .header-second {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .search-bar {
-        width: 100%;
-        height: 37px;
-    }
-
-    .search-bar img {
-        top: 1px;
-    }
-
-    .header-third {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 840px) and (max-width: 1235px) {
-
-    /* for tablets */
-    .header-third {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
-}
 
 
 /* =================================== CSS of Footer Component =============================================== */
@@ -339,38 +123,43 @@
     height: 240px;
     border-radius: 8px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero-banner{
+    .hero-banner {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 100px;
     }
+
     .hero-banner-1 {
         width: 446px;
         height: 356px;
         border-radius: 8px;
         margin-left: 0;
     }
+
     .hero-banner-2 {
         width: 310px;
         height: 165px;
         border-radius: 8px;
     }
-    
+
     .hero-banner-3 {
         width: 310px;
         height: 165px;
         border-radius: 8px;
     }
 }
+
 @media (max-width: 768px) {
-    .hero-banner-4{
+    .hero-banner-4 {
         width: 377px;
         height: 258px;
         border-radius: 4.2px;
     }
-    .hero-banner-5{
+
+    .hero-banner-5 {
         width: 377px;
         height: 150px;
         border-radius: 4.2px;
@@ -1087,18 +876,18 @@ h2 {
 }
 
 /* =================================== Offcanvas ================================================= */
-.department-heading{
+.department-heading {
     cursor: pointer;
-    height:50px;
+    height: 50px;
     border-radius: 5px;
 }
 
-.canvas-hover{
+.canvas-hover {
     height: 50px;
-    padding:8px 20px;
+    padding: 8px 20px;
     font-size: 18px;
 }
 
-.canvas-hover:hover{
-    background-color:#D8D8D8 !important ;
+.canvas-hover:hover {
+    background-color: #D8D8D8 !important;
 }

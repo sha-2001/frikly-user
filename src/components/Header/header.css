@@ -1,0 +1,200 @@
+.header {
+    width: 100%;
+}
+
+.header-first {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAE0D5;
+}
+
+.header-first span {
+    margin-left: .5rem;
+    color: #22333B;
+}
+
+.header-first img {
+    height: 1rem;
+}
+
+
+.header-first-item-1 {
+    align-self: center;
+    margin-left: 4vw;
+}
+
+.header-first-item-2 {
+    align-self: center;
+    margin-right: 3vw;
+}
+
+.header-second {
+    height: 100px;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 100%;
+}
+
+.main-logo{
+    height: 70px;
+}
+
+.normal-bold {
+    /* to use it in header little big and little bold */
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header2-logos {
+    height: 30px;
+    width: 30px;
+    color: gray;
+}
+
+.search-icon{
+    background-color: #22333B;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.catalogue-icon{
+    height: 34px;
+}
+
+.logo-text {
+    /* text to use below logos in header */
+    font-size: .8rem;
+    color: gray;
+}
+
+.header-searchbar {
+    height: 3rem;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddada;
+    outline-color: #22333B;
+}
+
+.header-searchbar::placeholder {
+    font-size: 0.8rem;
+}
+
+.hamburger img {
+    height: 24px;
+    width: 30px;
+}
+
+.header-third {
+    background-color: #22333B;
+    color: white;
+    height: 45px;
+    width: 100%;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* Hover effects for categories */
+.subcat {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.subcat:hover {
+    color: #C6AC8F;
+}
+
+.subcat::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #C6AC8F;
+}
+
+.subcat-hover::before {
+    width: 0%;
+    bottom: 1px;
+}
+
+.subcat-hover:hover::before {
+    width: 100%;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
+.category-div {
+    height: 40vh;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+}
+
+.category-div .col {
+    padding: .9rem;
+}
+
+.category-div p {
+    text-align: left;
+    font-size: .9rem;
+    color: #22333B;
+}
+
+.category-div ul {
+    padding: 0;
+}
+
+.category-div li {
+    list-style: none;
+    font-size: .9rem;
+    text-align: left;
+    color: #797979;
+    margin-bottom: .3rem;
+}
+
+@media (max-width: 768px){
+
+    .header-first {
+        font-size: 14px;
+    }
+
+    .header-second-item-1 img {
+        margin-left: 106px;
+    }
+
+    .header-first-item-2 {
+        margin-right: 10px;
+    }
+
+    .header-second {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 37px;
+    }
+
+    .search-bar img {
+        top: 1px;
+    }
+
+    .header-third {
+        display: none;
+    }
+
+}
+

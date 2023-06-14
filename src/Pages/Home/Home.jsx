@@ -17,22 +17,22 @@ function Home(props) {
   props.paymentClose()
   return (
     <div>
-      <HeroBanner/>
-      <Deal />
+      {/* <HeroBanner/> */}
+      {/* <Deal />
       <div style={{
         height: '100vh',
         margin: '50px',
         backgroundColor: 'gray',
         borderRadius: '20px',
-      }}></div>
+      }}></div> */}
 
       <OnTheWay />
-      <ReasonsToBuy />
-      <SellOnFrikly />
-      <FriklyWhatsapp />
+      {/* <ReasonsToBuy /> */}
+      {/* <SellOnFrikly /> */}
+      {/* <FriklyWhatsapp /> */}
       <ProMember />
-      <Testimonial />
-      <BuyingInBulk />
+      {/* <Testimonial /> */}
+      {/* <BuyingInBulk /> */}
       <DesignedForYou />
     </div>
   )
