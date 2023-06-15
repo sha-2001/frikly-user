@@ -27,6 +27,9 @@ function Header() {
     const [sidebarStatus,setSidebarStatus] = useState(false);
     const toggleSidebar = () =>{
         setSidebarStatus((prevState) => !prevState)
+        if(sidebarStatus){
+            document.body.style.overflowY = "hidden"
+        }
     }
 
     return (
