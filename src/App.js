@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 
 import Header from './components/Header/Header';
-import Footer from './components/Footer';
 import About from './Pages/About/About';
 import Payment from './Pages/Payment/Payment';
 import ProductsPage from './Pages/Product/ProductsPage';
@@ -12,6 +11,7 @@ import SingleProduct from './Pages/Product/SingleProduct';
 
 
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -24,13 +24,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {(onPayment)?<Header /> : console.log('hello')}
+        {(onPayment) ? <Header /> : console.log('hello')}
         <Routes>
-          <Route exact path='/' element={<Home paymentClose={paymentClose}/>} />
+          <Route exact path='/' element={<Home paymentClose={paymentClose} />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/products' element={<ProductsPage />} />
           <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
-          <Route exact path='/singleproduct' element={<SingleProduct/>} />
+          <Route exact path='/singleproduct' element={<SingleProduct />} />
         </Routes>
         <Footer />
       </BrowserRouter>
