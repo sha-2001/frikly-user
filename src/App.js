@@ -10,8 +10,10 @@ import ProductsPage from './Pages/Product/ProductsPage';
 import SingleProduct from './Pages/Product/SingleProduct';
 
 
+
 import './App.css';
 import Footer from './components/Footer/Footer';
+import State from './Pages/State/State';
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
           <Route exact path='/products' element={<ProductsPage />} />
           <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
           <Route exact path='/singleproduct' element={<SingleProduct />} />
+          <Route exact path='/state' element={<State/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

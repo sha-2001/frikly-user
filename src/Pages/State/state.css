@@ -1,0 +1,37 @@
+.state-carousel{
+    margin-bottom: 1rem;
+}
+
+.state{
+    height: fit-content;
+    margin-bottom: 122px;
+}
+
+.carousel-indicators{
+    position:abaolute;
+    top: 94%;
+}
+
+
+.corousel-btn1, .corousel-btn2{
+    height: 50px;
+    width: 50px;
+    background-color: #22333B;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+}
+
+.corousel-btn1{
+    left : 10px;
+}
+
+.corousel-btn2{
+    right: 10px;
+}
+
+.state-furniture-material{
+    height: 939px;
+}
+
+
