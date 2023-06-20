@@ -47,10 +47,20 @@
     font-size: 1rem;
 }
 
+@media (min-width:1200px) and (max-width:1400px){
+    .normal-bold{
+        font-size: .8rem;
+    }
+}
+
 .header2-logos {
     height: 30px;
     width: 30px;
     color: gray;
+}
+
+.header2-frikly-logo{
+    height: 100%;
 }
 
 .search-icon{
@@ -106,6 +116,13 @@
     text-decoration: none;
     display: inline-block;
     position: relative;
+    font-size: 1rem;
+}
+
+@media (min-width : 1200px) and (max-width : 1430px) {
+    .subcat{
+        font-size: .8rem;
+    }
 }
 
 .subcat:hover {

@@ -58,8 +58,8 @@ function Header() {
                     <div className="col  normal-bold d-flex align-items-center">About Us</div>
                     <div className="col  normal-bold me-4 d-flex align-items-center">Get Quote</div>
                     <div className="col-lg-4 col-md-3 ms-lg-5 ps-lg-4" style={{ paddingTop: "11px" }}>
-                        <div className="row pt-lg-1">
-                            <div className="col-10  p-0 pe-md-1 d-flex align-items-center ">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-10  p-0 pe-md-1 d-flex align-items-center">
                                 <input className='header-searchbar' placeholder='Search' type="text" />
                             </div>
                             <div className="col-2 search-icon d-flex justify-content-center align-items-center fw-bold">
@@ -213,9 +213,9 @@ function Header() {
             </div>
             {showCategory
                 &&
-                <div className="category-div container-fluid" onMouseEnter={() => setShowCategory(true)} onMouseLeave={() => setShowCategory(false)}>
-                    <div className="row" style={{ height: "100%" }}>
-                        <div className="col" style={{ backgroundColor: "white" }}>
+                <div className="category-div container-fluid" onMouseEnter={() => setShowCategory(true)} onMouseLeave={() => setShowCategory(false)} >
+                    <div className="row" style={{ height: "fit-content",backgroundColor: "white"  }}>
+                        <div className="col" >
                             <p className='fw-bold'>Channel & Hinges</p>
                             <ul>
                                 <li>Drawer Channels</li>

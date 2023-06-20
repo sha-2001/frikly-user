@@ -1,19 +1,45 @@
-.state-carousel{
+
+.state {
+    height: fit-content;
+    margin-bottom: 122px;
+    scroll-behavior: smooth;
+}
+
+.market-se-sasta{
+    padding: 3rem 4rem;
+}
+
+@media (max-width :1000px){
+    .market-se-sasta{
+        padding: 2rem 0rem;
+        height: fit-content;
+        width: 100vw;
+    }
+    .market-se-sasta img{
+        width: 100%;
+    }
+}
+
+/* ////////////////////////////// top carousel */
+
+.state-carousel {
     margin-bottom: 1rem;
 }
 
-.state{
-    height: fit-content;
-    margin-bottom: 122px;
+.carousel-indicators {
+    position: absolute;
+    top: 35vh;
+}
+.carousel-indicators .active{
+    background-color: #22333B;
+}
+.carousel-indicators > button{
+    background-color: #7b7979;
 }
 
-.carousel-indicators{
-    position:abaolute;
-    top: 94%;
-}
 
-
-.corousel-btn1, .corousel-btn2{
+.corousel-btn1,
+.corousel-btn2 {
     height: 50px;
     width: 50px;
     background-color: #22333B;
@@ -22,16 +48,294 @@
     top: 40%;
 }
 
-.corousel-btn1{
-    left : 10px;
+.corousel-btn1 {
+    left: 10px;
 }
 
-.corousel-btn2{
+.corousel-btn2 {
     right: 10px;
 }
 
-.state-furniture-material{
-    height: 939px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
 }
 
+/* ///////////////////////////////////////// */
+
+.state-furniture{
+    height: 80vh;
+    display: flex;
+    gap: 1%;
+    padding: 0px 5%;
+    margin-bottom: 2%;
+    flex-direction: row;
+}
+.state-furniture img{
+    height: 100%;
+    width: 100%;
+}
+.state-furniture-col1{
+    width: 35%;
+    /* background-color: red; */
+}
+.state-furniture-col2{
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.state-furniture-col2-row1{
+    /* background-color: aqua; */
+    height: 49%;
+    width: 100%;
+}
+.state-furniture-col2-row2{
+    /* background-color: aquamarine; */
+    height: 49%;
+    width: 100%;
+}
+.state-furniture-col3{
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.state-furniture-col3-row1{
+    /* background-color: aqua; */
+    height: 49%;
+    width: 100%;
+}
+.state-furniture-col3-row2{
+    /* background-color: aquamarine; */
+    height: 49%;
+    width: 100%;
+}
+.state-furniture-text1{
+    color: #22333B;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.state-furniture-text1 span{
+    font-weight: 700;
+}
+.state-furniture-text2{
+    color: #22333B;
+}
+
+@media (max-width:1000px){
+    .state-furniture{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .state-furniture-col2,.state-furniture-col1,.state-furniture-col3{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .state-furniture-col2{
+        flex-direction: row;
+    }
+    .state-furniture-col3-row2{
+        margin-top: 2%;
+    }
+    .state-furniture-text1{
+        font-size: 1.5rem;
+    }
+}
+
+/* state whatsapp ///////////////////////// */
+
+.state-whatsapp{
+    height: fit-content;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.state-whatsapp-col1{
+    /* background-color: red; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.state-whatsapp-col1 img{
+    height: 600px;
+    width: 300px;
+}
+.state-whatsapp-col2{
+    /* background-color: green; */
+    height: 100%;
+    width: 60%;
+}
+.state-whatsapp-heading{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: start;
+}
+.state-whatsapp-heading-text,.state-whatsapp-subheading{
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-align: start;
+    margin-bottom: 0;
+}
+.state-whatsapp-heading-text{
+    color: #526B77;
+}
+.state-whatsapp-icon img{
+    width: 50px;
+    height: 50px;
+}
+.state-whatsapp-para{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: start;
+    color: #526B77;
+}
+.state-whatsapp-subdiv{
+    display: flex;
+    gap: 2%;
+    margin-top: 4%;
+}
+.material-contact-button{
+    display: flex;
+    justify-content: start;
+    margin-top: 2%;
+}
+.material-contact-button img{
+    width: 150px;
+    height: 50px;
+}
+
+@media (max-width:1000px){
+    .state-whatsapp{
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem 1rem;
+    }
+    .state-whatsapp-col1,.state-whatsapp-col2{
+        width: 100%;
+    }
+    .state-whatsapp-heading{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    .state-whatsapp-heading-text{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .state-whatsapp-subheading{
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    .state-whatsapp-para{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .state-whatsapp-col1 img{
+        height: 500px;
+        width: 250px;
+    }
+    .state-whatsapp-col1{
+        align-items: end;
+        margin-bottom: 1rem;
+    }
+    .state-whatsapp-subdiv{
+        gap: 5%;
+    }
+}
+
+/* frikly vs market ///////////////////// */
+
+.frikly-vs-market{
+    height: 90vh;
+    background-color: #F1F1E6;
+    display: flex;
+    padding: 4% 5%;
+    gap: 5%;
+}
+
+.market-jgah{
+    width: 35%;
+}
+.market-frikly{
+    width: 30%;
+}
+.market-local{
+    width: 30%;
+}
+
+.frikly-vs-market img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:1000px){
+    .frikly-vs-market{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+    .market-jgah,
+    .market-frikly,
+    .market-local
+    {
+        width: 100%;
+        height: 80%;
+        margin-top: 5%;
+    }
+}
+
+/* qanda ////////////////////////////////////////// */
+.qanda{
+    height: fit-content;
+    padding: 2rem;
+    text-align: start;
+}
+.qanda-para,.faq-para{
+    margin-bottom: 2rem;
+}
+.qanda-para-head,.faq-q{
+    font-weight: 600;
+    font-size: .9rem;
+}
+.qanda-para-text,.faq-a{
+    font-weight: 400;
+    font-size: .9rem;
+}
+.faq-heading{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* brand slides /////////////////////////// */
+
+.brand-slide{
+    padding: 2rem 4rem;
+    height: 35vh;
+}
+.brand-slide img{
+    width: 100%;
+    height: 100%;
+}
+.brands-head{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.brands-head span{
+    font-weight: 600;
+}
+
+@media (max-width:1000px){
+    .brand-slide{
+        padding: 2rem 0rem;
+        height: 26vh;
+    }
+    .brands-head{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
 

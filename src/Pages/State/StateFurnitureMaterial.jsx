@@ -1,89 +1,77 @@
 import React from 'react'
 
-import Furniture1 from '../../assets/state/Furniture1.png';
-import Furniture2 from '../../assets/state/Furniture2.png';
-import Furniture3 from '../../assets/state/Furniture3.png';
-import Furniture4 from '../../assets/state/Furniture4.png';
-import Furniture5 from '../../assets/state/Furniture5.png';
-import Brands from '../../assets/state/Brands.png';
+import Furnitur1 from '../../assets/state/Furniture1.png';
+import Furnitur2 from '../../assets/state/Furniture2.png';
+import Furnitur3 from '../../assets/state/Furniture3.png';
+import Furnitur4 from '../../assets/state/Furniture4.png';
+import Furnitur5 from '../../assets/state/Furniture5.png';
 
-import MobileFurnitureFram from '../../assets/state/Mobile Funiture Frame.png'
+import Electronics1 from '../../assets/state/Electronics1.png';
+import Electronics2 from '../../assets/state/Electronics2.png';
+import Electronics3 from '../../assets/state/Electronics3.png';
+import Electronics4 from '../../assets/state/Electronics4.png';
 
-const StateFurnitureMaterial = () => {
+import Plumbing1 from '../../assets/state/Plumbing1.png';
+import Plumbing2 from '../../assets/state/Plumbing2.png';
+import Plumbing3 from '../../assets/state/Plumbing3.png';
+import Plumbing4 from '../../assets/state/Plumbing4.png';
+
+import Paint1 from '../../assets/state/Paint1.png';
+import Paint2 from '../../assets/state/Paint2.png';
+import Paint3 from '../../assets/state/Paint3.png';
+
+
+const StateFurnitureMaterial = ({image, heading, subHeading}) => {
+
+    let Furniture = [Furnitur1,Furnitur2,Furnitur3,Furnitur4,Furnitur5];
+    let Electronics = [Electronics1,Electronics2,Electronics3,Electronics4,Furnitur5];
+    let Plumbing = [Plumbing1,Plumbing2,Plumbing3,Plumbing4,Furnitur5];
+    let Paint = [Paint1,Paint2,Paint2,Paint3,Furnitur5]
+
+    let useImages = [];
+    switch(image){
+        case 1 :
+            useImages = Furniture;
+            break;
+        case 2 :
+            useImages = Electronics;
+            break;
+        case 3 :
+            useImages = Plumbing;
+            break;
+        case 4 :
+            useImages = Paint;
+            break;
+    }
+    
+
     return (
         <>
-            <div className='state-furniture-material d-none d-md-block'>
-                <div className="row">
-                    <p className='text-center mb-0' style={{ fontSize: "32px", color: "#22333B", fontWeight: "400"}}>Our <span style={{ fontWeight: "500" }}>Loream</span></p>
-                    <p className='text-center' style={{ fontSize: "18px", fontWeight: "500", color: "#22333B"}}>Lorem ipsum dolor sit amet, consectetur , sed do <span style={{ color: "#473C27" }}>eiusmod tempor</span></p>
-                </div>
-                <div className="row ps-5">
-                    <div className="col-4 ps-4 ">
-                        <img
-                            style={{
-                                width: "459px",
-                                height: "622px"
-                            }}
-                            src={Furniture1} alt="..." />
-                    </div>
-                    <div className="col">
-                        <div className="row mb-3">
-                            <div className="col-6  d-flex justify-content-start">
-                                <img style={{
-                                    width: "490px",
-                                    height: "303px"
-                                }} src={Furniture2} alt="..." />
-                            </div>
-                            <div className="col-5">
-                                <img style={{
-                                    width: "400px",
-                                    height: "303px"
-                                }} src={Furniture4} alt="..." />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-6 d-flex justify-content-start">
-                                <img style={{
-                                    width: "490px",
-                                    height: "303px"
-                                }} src={Furniture3} alt="..." />
-                            </div>
-                            <div className="col-5">
-                                <img style={{
-                                    width: "400px",
-                                    height: "303px"
-                                }} src={Furniture5} alt="..." />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row mt-4">
-                    <div className="row">
-                        <p className='text-center ps-5 ms-4' style={{
-                            fontSize: "28px",
-                            fontWeight: "400",
-                            color: "#22333B"
-                        }} >Popular <span style={{ fontWeight: "600", color: "#22333B" }}>Brands</span> We deal with.</p>
-                    </div>
-                    <div className="row">
-                        <img
-                            style={{
-                                width: "1009px",
-                                height: "93px",
-                                marginLeft: "12%",
-                                marginTop: "1%"
-                            }}
-                            src={Brands} alt="..." />
-                    </div>
-
-                </div>
+            <div>
+                <p className="state-furniture-text1"><span>{heading}</span></p>
+                <p className="state-furniture-text2">{subHeading}</p>
             </div>
-
-            <div className="container-fluid mb-3">
-                <img style={{
-                    height:"1168px"
-                }} src={MobileFurnitureFram} alt="..." />
-            </div>
+            <div className="state-furniture">
+                <div div className="state-furniture-col1" >
+                    <img src={useImages[0]} alt="" />
+                </div >
+                <div className="state-furniture-col2">
+                    <div className="state-furniture-col2-row1">
+                        <img src={useImages[1]} alt="" />
+                    </div>
+                    <div className="state-furniture-col2-row2">
+                        <img src={useImages[2]} alt="" />
+                    </div>
+                </div>
+                <div className="state-furniture-col3">
+                    <div className="state-furniture-col3-row1">
+                        <img src={useImages[3]} alt="" />
+                    </div>
+                    <div className="state-furniture-col3-row2">
+                        <img src={useImages[4]} alt="" />
+                    </div>
+                </div>
+            </div >
         </>
     )
 }
