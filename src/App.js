@@ -6,14 +6,13 @@ import { useState } from 'react';
 import Header from './components/Header/Header';
 import About from './Pages/About/About';
 import Payment from './Pages/Payment/Payment';
-import ProductsPage from './Pages/Product/ProductsPage';
-import SingleProduct from './Pages/Product/SingleProduct';
 
 
 
 import './App.css';
 import Footer from './components/Footer/Footer';
 import State from './Pages/State/State';
+import Products from './Pages/Product/Products';
 
 
 function App() {
@@ -30,10 +29,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home paymentClose={paymentClose} />} />
           <Route exact path='/about' element={<About />} />
-          <Route exact path='/products' element={<ProductsPage />} />
           <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
-          <Route exact path='/singleproduct' element={<SingleProduct />} />
           <Route exact path='/state' element={<State/>} />
+          <Route exact path='/products' element={<Products/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -11,37 +11,37 @@ import BannerMobile3 from '../../assets/state/banner-mobile3.png';
 import BannerMobile4 from '../../assets/state/banner-mobile4.png';
 
 const StateCarousel = () => {
+
+    let screenWidth = window.innerWidth;
+    console.log(screenWidth);
+    let DesktopBanner = [Banner2,Banner3,Banner4,Banner5];
+    let MobileBanner  = [BannerMobile1,BannerMobile2,BannerMobile3,BannerMobile4]
+    let useBanner = []
+    if(screenWidth <= 768){
+        useBanner = MobileBanner;
+    }
+    else{
+        useBanner = DesktopBanner;
+    }
+
     return (
         <div className="state-carousel p-0 mt-2 mt-xl-0 " >
-            <div id="stateCarouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" >
+            {/* for desktop view */}
+            <div id="stateCarouselIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000" >
                 <div class="carousel-inner ">
                     <div class="carousel-item active">
-                        <img src={Banner2} class="d-block w-100" alt="..." />
+                        <img src={useBanner[0]} class="d-block w-100" alt="..." />
                     </div>
                     <div class="carousel-item">
-                        <img src={Banner3} class="d-block w-100" alt="..." />
+                        <img src={useBanner[1]} class="d-block w-100" alt="..." />
                     </div>
                     <div class="carousel-item">
-                        <img src={Banner4} class="d-block w-100" alt="..." />
+                        <img src={useBanner[2]} class="d-block w-100" alt="..." />
                     </div>
                     <div class="carousel-item">
-                        <img src={Banner5} class="d-block w-100" alt="..." />
+                        <img src={useBanner[3]} class="d-block w-100" alt="..." />
                     </div>
                 </div>
-                {/* <div class="carousel-inner  d-xl-none">
-                    <div class="carousel-item active">
-                        <img src={BannerMobile1} class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src={BannerMobile2} class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src={BannerMobile3} class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src={BannerMobile4} class="d-block w-100" alt="..." />
-                    </div>
-                </div> */}
                 <button class="carousel-control-prev corousel-btn1" type="button" data-bs-target="#stateCarouselIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>

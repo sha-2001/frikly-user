@@ -8,6 +8,7 @@ import FriklyVsMarket from './FriklyVsMarket';
 import QandA from './QandA';
 import BrandSlides from './BrandSlides';
 import SastaMobile from '../../assets/state/sasta-mobile.png'
+import PaintFrame from './PaintFrame';
 
 
 
@@ -16,7 +17,7 @@ const State = () => {
     return (
         <>
             <div className="container-fluid state">
-                <div className="row">
+                <div className="row" >
                     <StateCarousel />
                 </div>
                 <div className='row market-se-sasta'>
@@ -53,9 +54,10 @@ const State = () => {
                     heading={'Paints material store'}
                     subHeading={'Explore our Vibrant Wall Paint Collection.'}
                     />
-                    <hr style={{ color: "#9DA5A9", height: "5px" }} />
+                    {/* <PaintFrame/> */}
+                    <hr style={{ color: "#9DA5A9", height: "5px",marginTop:"3rem" }} />
                 </div>
-                <div className="row">
+                <div className="row mt-5">
                     <Whatsapp/>
                 </div>
                 <div className="row">

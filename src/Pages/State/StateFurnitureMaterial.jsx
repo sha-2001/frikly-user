@@ -47,7 +47,7 @@ const StateFurnitureMaterial = ({image, heading, subHeading}) => {
 
     return (
         <>
-            <div>
+            <div className='state-template'>
                 <p className="state-furniture-text1"><span>{heading}</span></p>
                 <p className="state-furniture-text2">{subHeading}</p>
             </div>
