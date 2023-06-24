@@ -1,18 +1,17 @@
 import React from 'react';
-import Home from './Pages/Home/Home';
+import './App.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 
+import Home from './Pages/Home/Home';
 import Header from './components/Header/Header';
 import About from './Pages/About/About';
 import Payment from './Pages/Payment/Payment';
-
-
-
-import './App.css';
 import Footer from './components/Footer/Footer';
 import State from './Pages/State/State';
 import Products from './Pages/Product/Products';
+import SingleProduct from './Pages/Product/SingleProduct';
 
 
 function App() {
@@ -32,6 +31,7 @@ function App() {
           <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
           <Route exact path='/state' element={<State/>} />
           <Route exact path='/products' element={<Products/>} />
+          <Route exact path='/singleproduct' element={<SingleProduct/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

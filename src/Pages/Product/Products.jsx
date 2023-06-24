@@ -1,10 +1,9 @@
 import React from 'react'
 import './product.css'
 import ProductCard from './ProductCard'
-import TenPercentOff from '../../assets/Products/tenPercentOff.png'
-import ProductPagination from '../../assets/Products/product-pagination.png'
+import {Images} from './ProductImages';
 
-import {FilterNav} from './ProductCardStyles'
+import {FilterNav} from './ProductStyledComponents'
 
 const Products = () => {
     return (
@@ -50,7 +49,8 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="row ten-off mb-4 mt-4">
-                    <img src={TenPercentOff} alt="" />
+                    <img className='d-none d-md-block' src={Images.TenPercentOff} alt="" />
+                    <img className='d-md-none' src={Images.MobiletenPercentOff} alt="" />
                 </div>
                 <div className="row mb-4 row-cols-2 row-cols-lg-4 fs-sm-6">
                     <div className="col">
@@ -81,7 +81,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="row mb-4 product-pagination">
-                    <img src={ProductPagination} alt="..." />
+                    <img src={Images.ProductPagination} alt="..." />
                 </div>
             </div>
         </div>

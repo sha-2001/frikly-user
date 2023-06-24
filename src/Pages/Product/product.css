@@ -15,9 +15,7 @@
 }
 
 .ten-off {
-    padding-left: 20px;
-    padding-right: 55px;
-    height: 405px;
+    height: fit-content;
 }
 
 .product-pagination img {
@@ -48,7 +46,6 @@
     height: 42px;
 }
 
-
 /* product card */
 
 .product-card {
@@ -60,26 +57,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.card-image {
-    width: 91%;
-    height: 208px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: rgba(234, 224, 213, 0.50);
-}
-.compare-buy{
-    display: flex;
-}
-.compare-buy img{
-    width: 112.2%;
-    height: 100%;
-}
-.compare-buy div{
-    width: 50%;
-    height: 40px;
-}
-
-@media (max-width : 768px){
-
 }

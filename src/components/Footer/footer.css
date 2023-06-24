@@ -148,7 +148,7 @@
     /* Styles for mobile devices */
     .footer-row1 {
         flex-direction: column;
-        height: 55%;
+        height: fit-content;
         padding-top: 5%;
     }
 
@@ -160,7 +160,7 @@
     }
 
     .footer-container {
-        height: 100vh;
+        height: fit-content;
     }
 
     .email-container input,
