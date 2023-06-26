@@ -8,6 +8,18 @@ import TenPercentOff from '../../assets/Products/tenPercentOff.png'
 import ProductPagination from '../../assets/Products/product-pagination.png'
 import MobiletenPercentOff from '../../assets/Products/MobiletenPercentOff.png';
 
+// Single product page images
+import NeedHelp from '../../assets/Products/need-help.png';
+import PayOnDelivery from '../../assets/Products/pay-on-delivery.png';
+import Phone from '../../assets/Products/phone.png';
+import Pin from '../../assets/Products/Pin.png';
+import Replacement from '../../assets/Products/replacement.png';
+import SafeDelivery from '../../assets/Products/safe-delivery.png';
+import SingleProductImage from '../../assets/Products/SingleProductImage.png';
+import BestPriceIcon from '../../assets/Products/best-price.png';
+import Tick from '../../assets/Products/tick.png';
+import Location from '../../assets/Products/location.png';
+
 export const Images = {
     PlusIcon,
     WhatsappIcon,
@@ -15,4 +27,18 @@ export const Images = {
     TenPercentOff,
     ProductPagination,
     MobiletenPercentOff
+}
+
+export const SingleProductPageImages = {
+    NeedHelp,
+    PayOnDelivery, 
+    Phone, 
+    Pin, 
+    Replacement, 
+    SafeDelivery, 
+    SingleProductImage,
+    BestPriceIcon,
+    WhatsappIcon,
+    Tick,
+    Location
 }

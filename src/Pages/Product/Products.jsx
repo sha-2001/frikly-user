@@ -3,7 +3,7 @@ import './product.css'
 import ProductCard from './ProductCard'
 import {Images} from './ProductImages';
 
-import {FilterNav} from './ProductStyledComponents'
+import {FilterNav} from './ProductPageStyles'
 
 const Products = () => {
     return (
