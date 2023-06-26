@@ -6,7 +6,7 @@ import Mail from '../../assets/Footer/envelope.png';
 import Telephone from '../../assets/Footer/telephone.png';
 import PlayStore from '../../assets/Footer/google-play.png';
 import AppStore from '../../assets/Footer/app-store.png';
-import FriklyWhite from '../../assets/icons/frikly-white.png';
+import FriklyWhite from '../../assets/Footer/frikly-white.png';
 import Twitter from '../../assets/Footer/twitter.png';
 import Facebook from '../../assets/Footer/facebook.png';
 import Instagram from '../../assets/Footer/instagram.png';

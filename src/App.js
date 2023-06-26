@@ -6,8 +6,6 @@ import { useState } from 'react';
 
 import Home from './Pages/Home/Home';
 import Header from './components/Header/Header';
-import About from './Pages/About/About';
-import Payment from './Pages/Payment/Payment';
 import Footer from './components/Footer/Footer';
 import State from './Pages/State/State';
 import Products from './Pages/Product/Products';
@@ -27,8 +25,6 @@ function App() {
         {(onPayment) ? <Header /> : console.log('hello')}
         <Routes>
           <Route exact path='/' element={<Home paymentClose={paymentClose} />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/payment' element={<Payment paymentOpen={paymentOpen} />} />
           <Route exact path='/state' element={<State/>} />
           <Route exact path='/products' element={<Products/>} />
           <Route exact path='/singleproduct' element={<SingleProduct/>} />
