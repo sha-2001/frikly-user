@@ -23,7 +23,7 @@ const HeaderThird = () => {
       case 'Home Appliances':
         return <HomeAppliances subcat={Categories[2]['subcat']} />;
       case 'Laminates And Mica':
-        return <Laminates />;
+        return <Laminates subcat={Categories[3]['subcat']} />;
       case 'Beds':
         return <Beds />;
       case 'Storage':

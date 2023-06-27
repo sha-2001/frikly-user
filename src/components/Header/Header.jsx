@@ -14,7 +14,7 @@ const Header = () => {
             {/* 2 header bar */}
             <HeaderSecond/>
             {/* 3 header bar */}
-            <HeaderThird/>
+            <HeaderThird />
         </HeaderContainer>
     </Fragment>
   )

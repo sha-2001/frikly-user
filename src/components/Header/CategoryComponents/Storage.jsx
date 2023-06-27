@@ -2,7 +2,7 @@ import React from 'react'
 
 const Storage = () => {
   return (
-    <div>Storage</div>
+    <h1>Storage</h1>
   )
 }
 

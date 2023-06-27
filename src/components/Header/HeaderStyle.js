@@ -131,6 +131,8 @@ export const HeaderThirdContainer = styled.div`
     padding-left : 5%;
     padding-right : 5%;
     positon : relative;
+    text-transform : capitalize;
+    font-weight : 400;
 
     .category-main:hover{
         text-decoration : underline;
@@ -139,7 +141,7 @@ export const HeaderThirdContainer = styled.div`
     .mega-menu{
         position : absolute;
         width : 100%;
-        height : 60vh;
+        height : 50vh;
         background-color : white;
         z-index : 3;
         top : 23vh;
@@ -163,22 +165,28 @@ export const HardwareContainer = styled.div`
     color : black;
     text-align : left;
 
-    div{
+    .sub-category{
         width : 16%;
     }
 
     p{
-        text-align : center;
+        text-align : left;
+        font-weight : 500;
+        font-size : 14px;
+        margin-bottom : 0;
+        margin-top : 5px;
+        color : #001C30;
+        padding-left : 10px;
     }
 
     li{
         list-style : none;
-        margin-bottom : 6%;
         color : #797979;
-        font-size: .9rem;
+        font-size: 13px;
         font-weight: 400;
         transition : .3s;
-        padding:10px;
+        padding : 4px;
+        padding-left : 10px;
     }
 
     li:hover{
@@ -190,10 +198,26 @@ export const HardwareContainer = styled.div`
         margin : 0;
         padding : 0;
     }
-    .even{
-        background-color : white;
+`
+export const SanitarywareContainer = styled(HardwareContainer)`
+    li{
+        margin-bottom : 0px;
     }
-    .odd{
-        background-color : #EAE0D580;
+`
+export const HomeAppliancesContainer = styled(HardwareContainer)`
+`
+export const LaminatesContainer = styled(HardwareContainer)`
+    .shop-by{
+        display : flex;
+        width : 100%;
+    }
+    .sub-category{
+        width  : 25%;
+    }
+    .type, .finish{
+        width : 50%;
+    }
+    .laminates-heading{
+        margin-left : 22%;
     }
 `

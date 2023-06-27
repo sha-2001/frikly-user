@@ -2,7 +2,7 @@ import React from 'react'
 
 const Decor = () => {
   return (
-    <div>Decor</div>
+    <h1>Decor</h1>
   )
 }
 
