@@ -8,9 +8,6 @@ import Frikly from '../../assets/Header/frikly.png';
 import SearchIcon from '../../assets/Header/search-icon.png';
 import CatalogueMobile from '../../assets/Header/catalogue-mobile.png';
 import Hamburger from '../../assets/Header/hamburger.png';
-import Account from '../../assets/Header/account.png';
-import Wishlist from '../../assets/Header/wishlist.png';
-import Cart from '../../assets/Header/cart.png';
 import Catalogue from '../../assets/Header/catalogue.gif';
 
 // Home Appliances 
@@ -28,9 +25,6 @@ export const HeaderSecondImages = {
     SearchIcon,
     CatalogueMobile,
     Hamburger,
-    Account,
-    Wishlist,
-    Cart,
     Catalogue
 }
 

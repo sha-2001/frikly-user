@@ -7,7 +7,7 @@ export const HeaderFirstContainer = styled.div`
     height : 6vh;
     background-color : #EAE0D5;
     display : flex;
-    padding-left : 5%;
+    padding-left : 5.9%;
     padding-right : 5%;
     justify-content : space-between;
 
@@ -32,6 +32,7 @@ export const HeaderFirstContainer = styled.div`
         color: #22333B;
         font-size: 1rem;
         display: flex;
+        font-weight : 500;
         flex-wrap : nowrap;
         height : 100%
         align-items : center;
@@ -47,6 +48,11 @@ export const HeaderFirstContainer = styled.div`
         width : 0.875rem;
         height : 1.125rem;
         margin-right : 0.4rem;
+    }
+    .order-tracking {
+        color: #22333B;
+        font-size: 1rem;
+        font-weight : 500;
     }
     .order-tracking img{
         width : 1.5rem;
@@ -109,19 +115,22 @@ export const HeaderSecondContainer = styled.div`
     height : 10vh;
     background-color : white;
     width : 100%;
-    padding-left : 4.4%;
+    padding-left : 4.6%;
 
     .nav-link{
-        font-weight : 500;
-        color: #22333B;
+        font-weight : 600;
+        color: #001C30;
     }
     .d-flex{
         margin-right : 7%;
         width : 40%;
     }
+    .d-flex button{
+        width : 3rem;
+    }
     .frikly-logo{
         height : 40px;
-        width : 120px;
+        width : 140px;
     }
     .navbar{
         height : 100%;
@@ -130,6 +139,7 @@ export const HeaderSecondContainer = styled.div`
     input{
         border-top-right-radius : 0px;
         border-bottom-right-radius : 0px;
+        height : 3rem;
     }
     input::placeholder{
         color: #B5B5B5;
@@ -160,27 +170,18 @@ export const HeaderSecondContainer = styled.div`
         margin-right : 4.5%;
     }
     .wishlist a, .account a, .cart a{
-        color: #22333B;
+        color: #001C30;
         font-size: 0.75rem;
-        font-weight: 400;
-        opacity : 0.7;
-    }
-    .wishlist img, .account img{
-        width: 1.25rem;
-        height: 1.125rem;
-    }
-    .cart img{
-        width: 1.24219rem;
-        height: 1.24225rem;
+        font-weight: 600;
     }
     .catalogue img{
         width: 1.5rem;
-        height: 1.5rem;
+        height: 1.4rem;
     }
     .catalogue a{
-        color: #22333B;
+        color: #001C30;
         font-size: 0.75rem;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     @media (max-width : 1000px){

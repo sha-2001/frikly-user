@@ -1,6 +1,8 @@
 import { Fragment } from "react"
 import { HeaderSecondContainer, HeaderSecondMobileContainer } from "./HeaderStyle"
 import { HeaderSecondImages } from "./HeaderImages"
+import {AiOutlineHeart,AiOutlineShoppingCart} from 'react-icons/ai'
+import {RiAccountCircleLine} from 'react-icons/ri'
 
 const HeaderSecond = () => {
   return (
@@ -16,8 +18,8 @@ const HeaderSecond = () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Brand</a>
+                <li class="nav-item ">
+                  <a class="nav-link" aria-current="page" href="#">Brands</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">About Us</a>
@@ -32,21 +34,21 @@ const HeaderSecond = () => {
                   <img className="search-icon" src={HeaderSecondImages.SearchIcon} alt="..." />
                 </button>
               </form>
-              <ul class="navbar-nav mb-2 mb-lg-0 ccwa">
+              <ul class="navbar-nav pt-2 mb-2 mb-lg-0 ccwa">
                 <li class="nav-item catalogue">
                   <img src={HeaderSecondImages.Catalogue} alt=".." />
                   <a class="nav-link" aria-current="page" href="#">Catalogue</a>
                 </li>
                 <li class="nav-item cart">
-                  <img src={HeaderSecondImages.Cart} alt=".." />
+                  <AiOutlineShoppingCart size={22}/>
                   <a class="nav-link" href="#">Cart</a>
                 </li>
                 <li class="nav-item wishlist">
-                  <img src={HeaderSecondImages.Wishlist} alt=".." />
+                  <AiOutlineHeart size={23}/>
                   <a class="nav-link">Wishlist</a>
                 </li>
-                <li class="nav-item account">
-                  <img src={HeaderSecondImages.Account} alt=".." />
+                <li class="nav-item account" >
+                  <RiAccountCircleLine size={22}/>
                   <a class="nav-link">Account</a>
                 </li>
               </ul>

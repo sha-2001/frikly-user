@@ -1,6 +1,8 @@
 import { Fragment } from "react"
 import { HeaderFirstContainer } from "./HeaderStyle"
 import { HeaderFirstImages } from "./HeaderImages"
+import {HiOutlineLocationMarker} from 'react-icons/hi'
+
 
 const HeaderFirst = () => {
   return (
@@ -9,7 +11,7 @@ const HeaderFirst = () => {
         <div className="pincode">
           <div className="pincode-1">
             <span>
-              <img src={HeaderFirstImages.Pincode} alt="..." />
+              <HiOutlineLocationMarker size={20}/>
             </span> Enter Pincode
           </div>
           <div className="pincode-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Change Pincode</div>
