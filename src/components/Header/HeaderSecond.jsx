@@ -26,23 +26,27 @@ const HeaderSecond = () => {
                   <a class="nav-link">Get Quote</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form class="d-flex " role="search">
                 <input class="form-control" type="search" placeholder="Search on frikly" aria-label="Search" />
                 <button class="btn" type="submit">
                   <img className="search-icon" src={HeaderSecondImages.SearchIcon} alt="..." />
                 </button>
               </form>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+              <ul class="navbar-nav mb-2 mb-lg-0 ccwa">
+                <li class="nav-item catalogue">
+                  <img src={HeaderSecondImages.Catalogue} alt=".." />
                   <a class="nav-link" aria-current="page" href="#">Catalogue</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item cart">
+                  <img src={HeaderSecondImages.Cart} alt=".." />
                   <a class="nav-link" href="#">Cart</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item wishlist">
+                  <img src={HeaderSecondImages.Wishlist} alt=".." />
                   <a class="nav-link">Wishlist</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item account">
+                  <img src={HeaderSecondImages.Account} alt=".." />
                   <a class="nav-link">Account</a>
                 </li>
               </ul>
@@ -56,7 +60,7 @@ const HeaderSecond = () => {
             <img src={HeaderSecondImages.Hamburger} alt="..." />
           </div>
           <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            
+
           </div>
           <div className="htmc-item2">
             <img src={HeaderSecondImages.Frikly} alt="" />

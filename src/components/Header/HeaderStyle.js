@@ -156,6 +156,32 @@ export const HeaderSecondContainer = styled.div`
         height : 16px;
         width : 16px;
     }
+    .ccwa{
+        margin-right : 4.5%;
+    }
+    .wishlist a, .account a, .cart a{
+        color: #22333B;
+        font-size: 0.75rem;
+        font-weight: 400;
+        opacity : 0.7;
+    }
+    .wishlist img, .account img{
+        width: 1.25rem;
+        height: 1.125rem;
+    }
+    .cart img{
+        width: 1.24219rem;
+        height: 1.24225rem;
+    }
+    .catalogue img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .catalogue a{
+        color: #22333B;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
 
     @media (max-width : 1000px){
         display : none;
