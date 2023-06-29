@@ -4,6 +4,15 @@ import { SanitarywareContainer } from '../HeaderStyle';
 const Sanitaryware = ({ subcat }) => {
   const renderedIndices = [];
 
+  let bgcolor = 'white';
+  let setBgColor = () => {
+    bgcolor === 'white' ? bgcolor = 'brown' : bgcolor = 'white';
+  }
+
+  const toggleBgColor = () => {
+    setBgColor();
+  };
+
   return (
     <Fragment>
       <SanitarywareContainer>
@@ -26,7 +35,7 @@ const Sanitaryware = ({ subcat }) => {
           renderedIndices.push(...matchingIndices);
 
           return (
-            <div key={index} className='sub-category'>
+            <div key={index} className={`sub-category ${bgcolor}`}>
               {matchingIndices.map((matchingIndex) => {
                 const matchingValue = subcat[matchingIndex];
                 return (
@@ -40,6 +49,7 @@ const Sanitaryware = ({ subcat }) => {
                   </Fragment>
                 );
               })}
+              {toggleBgColor()}
             </div>
           );
         })}

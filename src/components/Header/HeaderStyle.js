@@ -117,8 +117,90 @@ export const HeaderSecondContainer = styled.div`
         opacity : 0.8
     }
     .search-icon{
+        height : 16px;
+        width : 16px;
+    }
+
+    @media (max-width : 1000px){
+        display : none;
+    }
+    @media (max-width : 1300px){
+        font-size : 13px;
+        .d-flex{
+            margin-right : 5%;
+            width : 30%;
+        }
+    }
+`
+export const HeaderSecondMobileContainer = styled.div`
+    display : none;
+
+    .htmc-row1{
+        display : flex;
+        justify-content : space-between;
+        padding-left : 5%;
+        padding-right : 5%;
+        align-items : center;
+        height : 52px;
+    }
+    .htmc-row2{
+        height : 60px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        
+    }  
+    .htmc-row2 form{
+        height : 62px;
+        width : 90%;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+    } 
+    .htmc-row2 input{
+        border: 1px solid #22333B;
+        height : 36px;
+        border-top-right-radius : 0px;
+        border-bottom-right-radius : 0px;
+        outline : none;
+    }
+    .htmc-row2 input:focus,
+    .htmc-row2 input:active {
+        outline: none;
+        box-shadow: none;
+    }
+    .htmc-row2 button{
+        background-color : #22333B;
+        height  : 36px;
+        width : 36px;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        border-top-left-radius : 0px;
+        border-bottom-left-radius : 0px;
+    }
+    .htmc-row2 button img{
+        height : 16px;
+        width : 16px;
+    }
+    .htmc-item1 img{
         height : 24px;
         width : 24px;
+    }
+    .htmc-item2 img{
+        width : 130px;
+        height : 40px;
+    }
+    .htmc-item3 img{
+        width : 20px;
+        height : 20px;
+    }
+    .offcanvas-header{
+        background: #22333B;
+    }
+
+    @media (max-width : 1000px){
+        display : block;
     }
 `
 export const HeaderThirdContainer = styled.div`
@@ -156,6 +238,10 @@ export const HeaderThirdContainer = styled.div`
         visibility : visible;
     }
 
+    @media (max-width : 1000px){
+            display : none;   
+    }
+
 `
 export const HardwareContainer = styled.div`
     height : 100%;
@@ -167,6 +253,12 @@ export const HardwareContainer = styled.div`
 
     .sub-category{
         width : 16%;
+    }
+    .brown{
+        background-color : #EAE0D580;
+    }
+    .white{
+        background-color : white;
     }
 
     p{
@@ -218,6 +310,8 @@ export const LaminatesContainer = styled(HardwareContainer)`
         width : 50%;
     }
     .laminates-heading{
-        margin-left : 22%;
+        text-align : center;
+        padding-right: 30%;
+        padding-left: 10%;
     }
 `

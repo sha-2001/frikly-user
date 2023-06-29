@@ -1,12 +1,20 @@
-import { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { HardwareContainer } from '../HeaderStyle';
 
 const Hardware = ({ subcat }) => {
   const renderedIndices = [];
+  let bgcolor = 'white';
+  let setBgColor = () => {
+    bgcolor === 'white' ? bgcolor = 'brown' : bgcolor = 'white';
+  }
+
+  const toggleBgColor = () => {
+    setBgColor();
+  };
 
   return (
     <Fragment>
-      <HardwareContainer >
+      <HardwareContainer>
         {subcat.map((value, index) => {
           // Skip the current iteration if the index has already been rendered
           if (renderedIndices.includes(index)) {
@@ -26,8 +34,9 @@ const Hardware = ({ subcat }) => {
           renderedIndices.push(...matchingIndices);
 
           return (
-            <div key={index} className='sub-category' >
-              {matchingIndices.map((matchingIndex) => {
+            <div key={index} className={`sub-category ${bgcolor}`}>
+              { 
+              matchingIndices.map((matchingIndex) => {
                 const matchingValue = subcat[matchingIndex];
                 return (
                   <Fragment key={matchingIndex}>
@@ -40,6 +49,7 @@ const Hardware = ({ subcat }) => {
                   </Fragment>
                 );
               })}
+              {toggleBgColor()}
             </div>
           );
         })}

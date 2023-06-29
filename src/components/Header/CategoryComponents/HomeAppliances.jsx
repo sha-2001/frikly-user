@@ -4,8 +4,17 @@ import { HomeApplicancesImages } from '../HeaderImages';
 
 const HomeAppliances = ({ subcat }) => {
   const renderedIndices = [];
-  const ImageArray = [HomeApplicancesImages.Twenty,HomeApplicancesImages.Thirty];
+  const ImageArray = [HomeApplicancesImages.Twenty, HomeApplicancesImages.Thirty];
   let indexOfImage = 0;
+
+  let bgcolor = 'white';
+  let setBgColor = () => {
+    bgcolor === 'white' ? bgcolor = 'brown' : bgcolor = 'white';
+  }
+
+  const toggleBgColor = () => {
+    setBgColor();
+  };
 
   return (
     <Fragment>
@@ -16,8 +25,8 @@ const HomeAppliances = ({ subcat }) => {
             return null; // Skip rendering
           }
 
-          if(value.name === ''){
-            return(
+          if (value.name === '') {
+            return (
               <div className="sub-category">
                 <img src={ImageArray[indexOfImage]} alt="" />
               </div>
@@ -37,7 +46,7 @@ const HomeAppliances = ({ subcat }) => {
           renderedIndices.push(...matchingIndices);
 
           return (
-            <div key={index} className='sub-category'>
+            <div key={index} className={`sub-category ${bgcolor}`}>
               {matchingIndices.map((matchingIndex) => {
                 const matchingValue = subcat[matchingIndex];
                 return (
@@ -51,6 +60,7 @@ const HomeAppliances = ({ subcat }) => {
                   </Fragment>
                 );
               })}
+              {toggleBgColor()}
             </div>
           );
         })}

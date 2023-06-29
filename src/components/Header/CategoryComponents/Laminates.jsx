@@ -2,12 +2,23 @@ import React, { Fragment } from 'react';
 import { LaminatesContainer } from '../HeaderStyle';
 
 const Laminates = ({ subcat }) => {
+  let bgcolor = 'brown';
+  const setBgColor = () => {
+    bgcolor === 'white' ? bgcolor = 'brown' : bgcolor = 'white';
+  }
+  const toggleBgColor = () => {
+    setBgColor();
+    console.log(bgcolor);
+  };
+
   return (
     <Fragment>
       <LaminatesContainer>
         {subcat.map((value, index) => {
+          console.log(index);
+          toggleBgColor();
           return (
-            <div key={index} className='sub-category'>
+            <div key={index} className={`sub-category ${bgcolor}`}>
               <p className='laminates-heading'>{value.name}</p>
               <div className='shop-by'>
                 <div className='type'>
@@ -29,7 +40,10 @@ const Laminates = ({ subcat }) => {
               </div>
             </div>
           );
+          // {}
+          
         })}
+        
       </LaminatesContainer>
     </Fragment>
   );

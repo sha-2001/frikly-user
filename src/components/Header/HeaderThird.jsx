@@ -1,5 +1,5 @@
 import { useState, Fragment } from "react";
-import { HeaderThirdContainer } from "./HeaderStyle";
+import { HeaderThirdContainer} from "./HeaderStyle";
 import { Categories } from "./Category";
 
 import Hardware from "./CategoryComponents/Hardware";

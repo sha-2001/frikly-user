@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import { HeaderSecondContainer } from "./HeaderStyle"
+import { HeaderSecondContainer, HeaderSecondMobileContainer } from "./HeaderStyle"
 import { HeaderSecondImages } from "./HeaderImages"
 
 const HeaderSecond = () => {
@@ -50,6 +50,30 @@ const HeaderSecond = () => {
           </div>
         </nav>
       </HeaderSecondContainer>
+      <HeaderSecondMobileContainer>
+        <div className="htmc-row1">
+          <div className="htmc-item1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img src={HeaderSecondImages.Hamburger} alt="..." />
+          </div>
+          <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            
+          </div>
+          <div className="htmc-item2">
+            <img src={HeaderSecondImages.Frikly} alt="" />
+          </div>
+          <div className="htmc-item3">
+            <img src={HeaderSecondImages.CatalogueMobile} alt="" />
+          </div>
+        </div>
+        <div className="htmc-row2">
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search on frikly" aria-label="Search" />
+            <button class="btn" type="submit">
+              <img className="search-icon" src={HeaderSecondImages.SearchIcon} alt="..." />
+            </button>
+          </form>
+        </div>
+      </HeaderSecondMobileContainer>
     </Fragment>
   )
 }

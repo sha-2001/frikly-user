@@ -5,6 +5,8 @@ import OrderTracking from '../../assets/Header/order-tracking.png';
 // Header Second assets
 import Frikly from '../../assets/Header/frikly.png';
 import SearchIcon from '../../assets/Header/search-icon.png';
+import CatalogueMobile from '../../assets/Header/catalogue-mobile.png';
+import Hamburger from '../../assets/Header/hamburger.png';
 
 // Home Appliances 
 import Twinty from '../../assets/Header/Twenty.png';
@@ -17,7 +19,9 @@ export const HeaderFirstImages = {
 
 export const HeaderSecondImages = {
     Frikly,
-    SearchIcon
+    SearchIcon,
+    CatalogueMobile,
+    Hamburger
 }
 
 export const HomeApplicancesImages = {
