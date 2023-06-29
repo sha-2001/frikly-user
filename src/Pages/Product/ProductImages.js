@@ -19,6 +19,7 @@ import SingleProductImage from '../../assets/Products/SingleProductImage.png';
 import BestPriceIcon from '../../assets/Products/best-price.png';
 import Tick from '../../assets/Products/tick.png';
 import Location from '../../assets/Products/location.png';
+import Alsosee from '../../assets/Products/also-see.png';
 
 export const Images = {
     PlusIcon,
@@ -40,5 +41,6 @@ export const SingleProductPageImages = {
     BestPriceIcon,
     WhatsappIcon,
     Tick,
-    Location
+    Location,
+    Alsosee
 }

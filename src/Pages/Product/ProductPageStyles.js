@@ -197,6 +197,14 @@ export const MainImage = styled.div`
   }
 `
 export const AlsoSee = styled.div`
+margin-top : 2rem;
+display : flex;
+gap : 2%;
+
+img{
+  width : 130px;
+  height : 172px;
+}
 `
 export const SingleProductName = styled.div`
   .product-name{
@@ -289,101 +297,20 @@ export const BestPrice = styled.div`
     font-weight : 600;
   }
 `
-export const BuyOnWhatsapp = styled.div`
-  height: 3.125rem;
-  display : flex;
-  justify-content : left;
-  margin-bottom : 2rem;
-  button{
-    height : 100%;
-    background-color : #22333B;
-    color : white;
-    width: 29.4375rem;
-  }
-  img{
-    width: 1.4375rem;
-    height: 1.46681rem;
-    margin-right : .4rem;
-  }
-`
 export const AddToCart = styled.div`
-  margin-bottom : 3rem;
-
-  .atc-1{
-    width: 29.4375rem;
-    height: fit-content;
-    padding: 1rem;
-    border-radius: 4px;
-    border: 2px solid #F4F4F4;
+  margin-bottom : 2rem;
+  .area{
+    font-size : 14px;
+    font-weight : 400;
+    color : #001C30;
+    background-color : #FEF8E8;
     margin-bottom : 2rem;
-  }
-  .atc-2{
-    display : flex;
-    gap  : 1rem;
-    border-bottom: 2px solid #F4F4F4;
-    padding: .5rem;
-    padding-bottom : 1rem;
-    padding-top : 0;
-    margin-bottom : 1.13rem;
-  }
-  .atc-3{
-    width : 10.75rem;
-    height :3.5rem;
-    padding: 0.425rem 0rem;
-    border-radius: 10px;
-    border: 2px solid #F4F4F4;
-    display : flex;
-    justify-content : space-between;
-    align-items : center;
-  }
-  .atc-3 div{
-    height : 100%;
-    display :flex;
-    justify-content : center;
-    align-items : center;
-  }
-  .atc-3-items{
-    font-size : 1.5rem;
-    width : 35%
-  }
-  .atc-3-itemd{
-    border-radius: 4px;
-    background: #EAE0D5;
-    width : 30%;
-  }
-  .atc-4{
-    width: 14.21556rem;
-    height: 3.125rem;
-    border: 1.17px solid #22333B;
+    width : 188px;
+    height : 36px;
     display : flex;
     justify-content : center;
     align-items : center;
-    color: #22333B;
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-  .atc-5{
-    color: #22333B;
-    font-size: 0.875rem;
-    text-align : start;
-  }
-  .atc-6{
-    color : #F2BC1B;
-  }
-  .atc-5 img{
-    width : 1rem;
-    height : 1rem;
-  }
-  .atc-7{
-    color: #22333B;
-    font-size: 0.875rem;
-    height: 2.25rem;
-    padding: 0.25rem 0.875rem 0.3125rem 0.875rem;
-    border-radius: 100px;
-    background: #FEF8E8;
-    display : flex;
-    align-items : center;
-    justify-content : center;
+    border-radius : 2rem;
   }
   .atc-8{
     height :5.87rem;
@@ -456,12 +383,11 @@ export const Description = styled.div`
     align-items : center;
     justify-content : center;
     width : 25%;
-    height : 80%;
+    height : 70%;
   }
   .active-description{
     border-radius: 100px;
-    border: 1px solid #22333B;
-    background: #F2F6F4;
+    background: #EAE0D5;
   }
   .description-container li{
     text-align : left;

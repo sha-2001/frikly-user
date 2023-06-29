@@ -28,7 +28,18 @@ const SingleProduct = () => {
           </MainImage>
 
           <AlsoSee>
-
+          <div>
+            <img src={SingleProductPageImages.Alsosee} alt="..." />          
+          </div>
+          <div>
+            <img src={SingleProductPageImages.Alsosee} alt="..." />
+          </div>
+          <div>
+            <img src={SingleProductPageImages.Alsosee} alt="..." />
+          </div>
+          <div>
+            <img src={SingleProductPageImages.Alsosee} alt="..." />
+          </div>
           </AlsoSee>
 
         </SingleProductImageSection>
@@ -51,6 +62,7 @@ const SingleProduct = () => {
           <SingleMRPandPrice>
             <p className="mrp">MRP: <span className='mrp-1'>₹ 17,999</span> <span className='mrp-2'>11% off</span></p>
             <p className="price">₹ 11,999 <span className="price-1">/ piece</span></p>
+            
           </SingleMRPandPrice>
 
           <BestPrice>
@@ -68,44 +80,22 @@ const SingleProduct = () => {
             </div>
           </BestPrice>
 
-          <BuyOnWhatsapp>
-            <button>
-              <span>
-                <img src={SingleProductPageImages.WhatsappIcon} alt="" />
-              </span>
-              Buy On Whatsapp
-            </button>
-          </BuyOnWhatsapp>
-
           <AddToCart>
-            <div className="atc-1">
-              <div className="atc-2">
-                <div className="atc-3">
-                  <div className="atc-3-items">-</div>
-                  <div className="atc-3-itemd">1</div>
-                  <div className="atc-3-items">+</div>
-                </div>
-                <div className="atc-4">ADD TO CART</div>
-              </div>
-              <p className="atc-5">
+            <div className="atc-9">
+              <div className="atc-item1">
                 <span>
-                  <img src={SingleProductPageImages.Tick} alt="" />
-                </span> Free Xpress Shipping on orders over <span className="atc-6">₹50,000</span>
-              </p>
-              <p className="atc-5">
-                <span >
-                  <img src={SingleProductPageImages.Tick} alt="" />
-                </span> Orders before 12:00pm for same day dispatch
-              </p>
-              <p className="atc-5">
-                <span>
-                  <img src={SingleProductPageImages.Tick} alt="" />
-                </span> Support & ordering open 6 day a week
-              </p>
-              <div className="atc-7">
-                Safe home delivery by Frikly
+                  <img src={SingleProductPageImages.Location} alt="..." />
+                </span>
+                <input type="text" placeholder='Enter pincode' />
               </div>
+              <div className="atc-item2">
+                Check
+              </div>
+              
             </div>
+            <div className="area">
+                Your area is deliverable
+              </div>
             <div className="atc-8">
               <div className="atc-8-item">
                 <div className="atc-8-item-image">
@@ -124,17 +114,6 @@ const SingleProduct = () => {
                   <img src={SingleProductPageImages.Replacement} alt="" />
                 </div>
                 <p>10 days Replacement</p>
-              </div>
-            </div>
-            <div className="atc-9">
-              <div className="atc-item1">
-                <span>
-                  <img src={SingleProductPageImages.Location} alt="..." />
-                </span>
-                <input type="text" placeholder='Enter pincode' />
-              </div>
-              <div className="atc-item2">
-                Check
               </div>
             </div>
           </AddToCart>
