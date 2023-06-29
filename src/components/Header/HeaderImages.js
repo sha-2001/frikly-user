@@ -1,6 +1,7 @@
 // Header first assets
 import Pincode from '../../assets/Header/enter-pincode.png';
 import OrderTracking from '../../assets/Header/order-tracking.png';
+import Cancel from '../../assets/Header/cancel.png';
 
 // Header Second assets
 import Frikly from '../../assets/Header/frikly.png';
@@ -14,7 +15,8 @@ import Thirty from '../../assets/Header/Thirty.png';
 
 export const HeaderFirstImages = {
     Pincode,
-    OrderTracking
+    OrderTracking,
+    Cancel
 }
 
 export const HeaderSecondImages = {

@@ -53,6 +53,42 @@ export const HeaderFirstContainer = styled.div`
         height : 1.5rem;
         margin-right : 0.4rem;
     }
+    .modal-header p{
+        color: #0F171B;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .modal-body p{
+        color: #73777B;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform : capitalize;
+    }
+    .modal-footer{
+        border-top : none;
+    }
+    .modal-body input{
+        box-shadow : none;
+        border-color : #D3D3D3;
+    }
+    .modal-body input::placeholder{
+        color: #73777B;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    .modal-header button img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .modal-header button{
+        border : none;
+    }
+    .modal-footer{
+        button{
+            background-color : #22333B;
+            color : white;
+        }
+    }
     @media (max-width : 790px){
         .pincode-1, .order-tracking{
             font-size : .8rem;
@@ -216,10 +252,12 @@ export const HeaderThirdContainer = styled.div`
     text-transform : capitalize;
     font-weight : 400;
 
+   
     .category-main:hover{
-        text-decoration : underline;
+        color : #C6AC8F;
     }
-
+    
+   
     .mega-menu{
         position : absolute;
         width : 100%;
