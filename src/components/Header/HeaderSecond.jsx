@@ -3,7 +3,7 @@ import { HeaderSecondContainer, HeaderSecondMobileContainer } from "./HeaderStyl
 import { HeaderSecondImages } from "./HeaderImages"
 import {AiOutlineHeart,AiOutlineShoppingCart} from 'react-icons/ai'
 import {RiAccountCircleLine} from 'react-icons/ri'
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar/Sidebar"
 
 const HeaderSecond = () => {
   return (
