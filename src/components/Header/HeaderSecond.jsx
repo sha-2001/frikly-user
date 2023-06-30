@@ -3,6 +3,7 @@ import { HeaderSecondContainer, HeaderSecondMobileContainer } from "./HeaderStyl
 import { HeaderSecondImages } from "./HeaderImages"
 import {AiOutlineHeart,AiOutlineShoppingCart} from 'react-icons/ai'
 import {RiAccountCircleLine} from 'react-icons/ri'
+import Sidebar from "./Sidebar"
 
 const HeaderSecond = () => {
   return (
@@ -62,7 +63,7 @@ const HeaderSecond = () => {
             <img src={HeaderSecondImages.Hamburger} alt="..." />
           </div>
           <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-
+            <Sidebar/>
           </div>
           <div className="htmc-item2">
             <img src={HeaderSecondImages.Frikly} alt="" />

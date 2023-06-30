@@ -3,6 +3,111 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     height : 23vh;
 `
+export const SidebarContainer = styled.div`
+    .sidebar-header{
+        height : 17vh;
+        margin-bottom : 1.5rem;
+    }
+    .logo-portion{
+        height : 45%;
+        background: #22333B;
+        box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+    .logo-portion img{
+        width: 50%;
+        height: 75%;
+    }
+    .cheapest-quote{
+        height : 55%;
+        background: #EAE0D5;
+    }
+    .img-container{
+        border-radius: 2.8125rem;
+        background: #FFF;
+        width: 2.8125rem;
+        height: 2.8125rem;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+    }
+    .cheapest-quote .col-7{
+        display : flex;
+        align-items : flex-start;
+        flex-direction : column;
+        justify-content: center;
+    }
+    .cheapest-quote-text1{
+        color: #0A0908;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align : left;
+        margin-bottom : 0;
+    }
+    .cheapest-quote-text2{
+        color: #22333B;
+        font-size: 0.75rem;
+        font-weight: 500;
+        opacity: 0.699999988079071;
+        text-align : left;
+        margin-bottom : 0;
+    }
+    .sidebar-home{
+        hight : fit-content;
+    }
+    .sidebar-home .row{
+        height : 2.375rem;
+    }
+    .home-text{
+        text-align : left;
+        color: #22333B;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .home-section1{
+        height : 11.5rem;
+        border-bottom: 1px solid rgba(34, 51, 59, 0.80);
+        background: #FFF;
+        display : flex;
+        flex-direction : column;
+        row-gap : 1.2rem;
+    }
+    .home-section2{
+        height : 8.75rem;
+        border-bottom: 1px solid rgba(34, 51, 59, 0.80);
+        background: #FFF;
+        display : flex;
+        flex-direction : column;
+        row-gap : 1.2rem;
+        padding-top : 1rem;
+    }
+    .home-section3{
+        height : 8.75rem;
+        border-bottom: 1px solid rgba(34, 51, 59, 0.80);
+        background: #FFF;
+        display : flex;
+        flex-direction : column;
+        row-gap : 1.2rem;
+        padding-top : 1rem;
+    }
+    .home-section4{
+        height : 12.8rem;
+        display : flex;
+        flex-direction : column;
+        row-gap : 1.2rem;
+        padding-top : 1rem;
+    }
+    .sidebar-signin{
+        display : flex;
+        justify-content : center;
+    }
+    .sidebar-signin button{
+        width: 12.96569rem;
+        height: 2.95025rem;
+        border-radius: 0.25rem;
+        background: #EAE0D5;
+        border : none;
+    }
+`
 export const HeaderFirstContainer = styled.div`
     height : 6vh;
     background-color : #EAE0D5;

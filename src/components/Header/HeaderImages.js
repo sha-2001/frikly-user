@@ -10,6 +10,9 @@ import CatalogueMobile from '../../assets/Header/catalogue-mobile.png';
 import Hamburger from '../../assets/Header/hamburger.png';
 import Catalogue from '../../assets/Header/catalogue.gif';
 
+// Sidebar images
+import FriklyWhite from '../../assets/Header/frikly-white.png';
+
 // Home Appliances 
 import Twinty from '../../assets/Header/Twenty.png';
 import Thirty from '../../assets/Header/Thirty.png';
@@ -18,6 +21,10 @@ export const HeaderFirstImages = {
     Pincode,
     OrderTracking,
     Cancel
+}
+
+export const SidebarImages = {
+    FriklyWhite,
 }
 
 export const HeaderSecondImages = {
