@@ -62,7 +62,33 @@ const SingleProduct = () => {
           <SingleMRPandPrice>
             <p className="mrp">MRP: <span className='mrp-1'>₹ 17,999</span> <span className='mrp-2'>11% off</span></p>
             <p className="price">₹ 11,999 <span className="price-1">/ piece</span></p>
-            
+            <div className="add-to-cart">
+              <div className="counter">
+                <div className="counter-box">
+                  <div className='counter-item1'>-</div>
+                  <div className='counter-item2'>1</div>
+                  <div className='counter-item3'>+</div>
+                </div>
+                <div className="add-to-cart-button">
+                  <button>ADD TO CART</button>
+                </div>
+              </div>
+              <div className="buy-on-whatsapp">
+                <button><span><img src={SingleProductPageImages.WhatsappIcon} alt="" /></span>Buy On WhatApp</button>
+              </div>
+              <div className="product-info">
+              <p>
+                <img src={SingleProductPageImages.Tick} alt=".." /> Lenght : <span>8 feet</span>
+              </p>
+              <p>
+                <img src={SingleProductPageImages.Tick} alt=".." /> Breadth: <span>4 feet</span>
+              </p>
+              <p>
+                <img src={SingleProductPageImages.Tick} alt=".." /> Sheets Available : <span>144</span>
+              </p>
+              
+              </div>
+            </div>
           </SingleMRPandPrice>
 
           <BestPrice>

@@ -263,6 +263,81 @@ export const SingleMRPandPrice = styled.div`
   .price-1{
     font-size: 0.98869rem;
   }
+  .add-to-cart{
+    height  : 220px;
+    color : #22333B;
+  }
+  .product-info img{
+    height : 16px;
+    width : 16px;
+  }
+  .product-info p{
+    font-size : 14px;
+    font-weight : 400;
+    color : #001C30;
+    text-align : left;
+    margin-bottom : 5px;
+  }
+  .product-info span{
+    font-weight : 500;
+  }
+  .buy-on-whatsapp button{
+    width  : 100%;
+    height : 100%;
+    font-size : 18px;
+    font-weight  : 600;
+    color : #001C30;
+    background-color  : white;
+  }
+  .buy-on-whatsapp img{
+    width  : 23px;
+    height : 23px;
+    margin-right : 5px;
+  }
+  .buy-on-whatsapp{
+    width : 366px;
+    height : 50px;
+    margin-bottom : 1rem;
+  }
+  .counter{
+    display : flex;
+    gap : 1rem;
+    margin-bottom : 1rem;
+  }
+  .counter-box{
+    border-radius: 0.25rem;
+    border: 1px solid #D3D3D3;
+    display : flex;
+    height : 3.125rem;
+    width : 9.25rem;
+  }
+  .counter-item1,.counter-item3{
+    width : 35%;
+    font-size : 2rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+  }
+  .counter-item2{
+    width : 30%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border-left: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+    font-weight : 500;
+  }
+  .add-to-cart-button{
+    height : 3.125rem;
+    width : 12.5rem;
+  }
+  .add-to-cart-button button{
+    height  :100%;
+    width  : 100%;
+    border-radius: 0.25rem;
+    background: #22333B;
+    color : white;
+  }
 `
 export const BestPrice = styled.div`
   height : fit-content;
