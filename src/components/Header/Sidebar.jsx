@@ -16,7 +16,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <div className="sidebar-header">
         <div className="row p-0 logo-portion">
-          <div className="col-2 p-0 ps-4 d-flex justify-content-center align-items-center"><BsArrowLeft size={30} color='white'/></div>
+          <div className="col-2 p-0 ps-4 d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas" aria-label="Close"><BsArrowLeft size={30} color='white'/></div>
           <div className="col-8 p-0 d-flex justify-content-center align-items-center">
             <img src={SidebarImages.FriklyWhite} alt="..." />
           </div>
