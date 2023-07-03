@@ -1,11 +1,11 @@
 import React from 'react'
 import './state.css'
 
-import Paint1 from '../../assets/state/Paint1.png';
-import Paint2 from '../../assets/state/Paint2.png';
-import Paint3 from '../../assets/state/Paint3.png';
+import Paint1 from '../../assets/state/Paint1.webp';
+import Paint2 from '../../assets/state/Paint2.webp';
+import Paint3 from '../../assets/state/Paint3.webp';
 // import Furnitur5 from '../../assets/state/Furniture5.png';
-import ContactBanner from '../../assets/state/contact-banner.png'
+import ContactBanner from '../../assets/state/contact-banner.webp'
 
 const PaintFrame = () => {
     return (
@@ -29,7 +29,7 @@ const PaintFrame = () => {
                     </div>
                 </div>
                 <img style={{
-                    width:'885px',
+                    width:'webppx',
                     height:'270px',
                     position:"absolute",
                     top:"623vh",

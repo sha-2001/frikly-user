@@ -2,12 +2,12 @@ import React from 'react'
 import './state.css'
 import StateCarousel from './StateCarousel'
 import StateFurnitureMaterial from './StateFurnitureMaterial';
-import Sasta from '../../assets/state/sasta.png';
+import Sasta from '../../assets/state/sasta.webp';
 import Whatsapp from './Whatsapp';
 import FriklyVsMarket from './FriklyVsMarket';
 import QandA from './QandA';
 import BrandSlides from './BrandSlides';
-import SastaMobile from '../../assets/state/sasta-mobile.png'
+import SastaMobile from '../../assets/state/sasta-mobile.webp'
 import PaintFrame from './PaintFrame';
 
 
@@ -57,7 +57,7 @@ const State = () => {
                     {/* <PaintFrame/> */}
                     <hr style={{ color: "#9DA5A9", height: "5px",marginTop:"3rem" }} />
                 </div>
-                <div className="row mt-5">
+                <div className="row mt-webp">
                     <Whatsapp/>
                 </div>
                 <div className="row">

@@ -1,13 +1,12 @@
 import React from 'react'
 
-import FurnitureBrands1 from '../../assets/state/Furniture-brands1.png'
-import FurnitureBrands2 from '../../assets/state/Furniture-brands2.png'
-import PlumbingBrands1 from '../../assets/state/Plumbing-brands1.png'
-import ElectronicsBrands1 from '../../assets/state/Electronics-brands1.png'
+import FurnitureBrands1 from '../../assets/state/Furniture-brands1.webp'
+import FurnitureBrands2 from '../../assets/state/Furniture-brands2.webp'
+import PlumbingBrands1 from '../../assets/state/Plumbing-brands1.webp'
+import ElectronicsBrands1 from '../../assets/state/Electronics-brands1.webp'
 
 
-const BrandSlides = ({ brand }) => {
-
+const BrandSlides = ({ brand }) =>{
     let furnitures = [FurnitureBrands1, FurnitureBrands2]
     let plumbing = [PlumbingBrands1, PlumbingBrands1]
     let electronics = [ElectronicsBrands1, ElectronicsBrands1]

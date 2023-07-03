@@ -6,14 +6,16 @@ import {HiOutlineBadgeCheck} from 'react-icons/hi';
 import {TbHeartPlus} from 'react-icons/tb';
 import {AiOutlineShoppingCart, AiOutlineLogin,AiOutlineInfoCircle} from 'react-icons/ai';
 
-const SidebarHome = () => {
+const SidebarHome = ({toggleHome}) => {
     return (
         <>
-            <div className="sidebar-home">
+            <div className="sidebar-home mt-3">
                 <div className="home-section1">
                     <div className="row">
                         <div className="col-3"><BiCategoryAlt size={24} /></div>
-                        <div className="col-8 home-text">Top Categories</div>
+                        <div className="col-8 home-text" 
+                            onClick={()=>(toggleHome('topCategories'))}
+                        >Top Categories</div>
                     </div>
                     <div className="row">
                         <div className="col-3"><HiOutlineBadgeCheck size={24} /></div>

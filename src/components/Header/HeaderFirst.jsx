@@ -10,7 +10,7 @@ const HeaderFirst = () => {
       <HeaderFirstContainer>
         <div className="pincode">
           <div className="pincode-1">
-            <span>
+            <span className="d-none d-lg-inline-block">
               <HiOutlineLocationMarker size={20}/>
             </span> Enter Pincode
           </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import whatsapp from '../../assets/state/Whatsapp.png';
-import material from '../../assets/state/material-requirements.png';
-import lowest from '../../assets/state/lowest-quote.png';
-import care from '../../assets/state/care-for-customer.png';
-import contactButton from '../../assets/state/contact-button.png';
+import whatsapp from '../../assets/state/Whatsapp.webp';
+import material from '../../assets/state/material-requirements.webp';
+import lowest from '../../assets/state/lowest-quote.webp';
+import care from '../../assets/state/care-for-customer.webp';
+import contactButton from '../../assets/state/contact-button.webp';
 
 const Whatsapp = () => {
   return (

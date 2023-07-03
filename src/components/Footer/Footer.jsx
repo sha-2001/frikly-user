@@ -1,18 +1,18 @@
 import React from 'react'
 import './footer.css'
 
-import Phone from '../../assets/Footer/mobile-frame.png';
-import Mail from '../../assets/Footer/envelope.png';
-import Telephone from '../../assets/Footer/telephone.png';
-import PlayStore from '../../assets/Footer/google-play.png';
-import AppStore from '../../assets/Footer/app-store.png';
-import FriklyWhite from '../../assets/Footer/frikly-white.png';
-import Twitter from '../../assets/Footer/twitter.png';
-import Facebook from '../../assets/Footer/facebook.png';
-import Instagram from '../../assets/Footer/instagram.png';
-import Pinterest from '../../assets/Footer/pinterest.png';
-import Whatsapp from '../../assets/Footer/logos_whatsapp-icon.png';
-import RightArrow from '../../assets/Footer/right-arrow.png';
+import Phone from '../../assets/Footer/mobile-frame.webp';
+import Mail from '../../assets/Footer/envelope.webp';
+import Telephone from '../../assets/Footer/telephone.webp';
+import PlayStore from '../../assets/Footer/google-play.webp';
+import AppStore from '../../assets/Footer/app-store.webp';
+import FriklyWhite from '../../assets/Footer/frikly-white.webp';
+import Twitter from '../../assets/Footer/twitter.webp';
+import Facebook from '../../assets/Footer/facebook.webp';
+import Instagram from '../../assets/Footer/instagram.webp';
+import Pinterest from '../../assets/Footer/pinterest.webp';
+import Whatsapp from '../../assets/Footer/logos_whatsapp-icon.webp';
+import RightArrow from '../../assets/Footer/right-arrow.webp';
 
 
 const Footer = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import jgaah from '../../assets/state/jgaah.png';
-import friklyMarket from '../../assets/state/frikly-market.png';
-import localMarket from '../../assets/state/local-market.png'
+import jgaah from '../../assets/state/jgaah.webp';
+import friklyMarket from '../../assets/state/frikly-market.webp';
+import localMarket from '../../assets/state/local-market.webp'
 
 const FriklyVsMarket = () => {
   return (

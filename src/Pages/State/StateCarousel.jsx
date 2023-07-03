@@ -1,14 +1,14 @@
 import React from 'react';
 // import Banner from '../../assets/state/banner.png';
-import Banner2 from '../../assets/state/banner2.png';
-import Banner3 from '../../assets/state/banner3.png';
-import Banner4 from '../../assets/state/banner4.png';
-import Banner5 from '../../assets/state/banner5.png';
+import Banner2 from '../../assets/state/banner2.webp';
+import Banner3 from '../../assets/state/banner3.webp';
+import Banner4 from '../../assets/state/banner4.webp';
+import Banner5 from '../../assets/state/banner5.webp';
 
-import BannerMobile1 from '../../assets/state/banner-mobile1.png';
-import BannerMobile2 from '../../assets/state/banner-mobile2.png';
-import BannerMobile3 from '../../assets/state/banner-mobile3.png';
-import BannerMobile4 from '../../assets/state/banner-mobile4.png';
+import BannerMobile1 from '../../assets/state/banner-mobile1.webp';
+import BannerMobile2 from '../../assets/state/banner-mobile2.webp';
+import BannerMobile3 from '../../assets/state/banner-mobile3.webp';
+import BannerMobile4 from '../../assets/state/banner-mobile4.webp';
 
 const StateCarousel = () => {
 

@@ -1,21 +1,25 @@
 // Header first assets
-import Pincode from '../../assets/Header/enter-pincode.png';
-import OrderTracking from '../../assets/Header/order-tracking.png';
-import Cancel from '../../assets/Header/cancel.png';
+import Pincode from '../../assets/Header/enter-pincode.webp';
+import OrderTracking from '../../assets/Header/order-tracking.webp';
+import Cancel from '../../assets/Header/cancel.webp';
 
 // Header Second assets
-import Frikly from '../../assets/Header/frikly.png';
-import SearchIcon from '../../assets/Header/search-icon.png';
-import CatalogueMobile from '../../assets/Header/catalogue-mobile.png';
-import Hamburger from '../../assets/Header/hamburger.png';
+import Frikly from '../../assets/Header/frikly.webp';
+import SearchIcon from '../../assets/Header/search-icon.webp';
+import CatalogueMobile from '../../assets/Header/catalogue-mobile.webp';
+import Hamburger from '../../assets/Header/hamburger.webp';
 import Catalogue from '../../assets/Header/catalogue.gif';
 
 // Sidebar images
-import FriklyWhite from '../../assets/Header/frikly-white.png';
+import FriklyWhite from '../../assets/Header/frikly-white.webp';
+import Hardware from '../../assets/Header/hardware.webp';
+import Bath from '../../assets/Header/bath.webp';
+import Appliances from '../../assets/Header/appliances.webp';
+import Laminates from '../../assets/Header/laminates.webp';
 
 // Home Appliances 
-import Twinty from '../../assets/Header/Twenty.png';
-import Thirty from '../../assets/Header/Thirty.png';
+import Twinty from '../../assets/Header/Twenty.webp';
+import Thirty from '../../assets/Header/Thirty.webp';
 
 export const HeaderFirstImages = {
     Pincode,
@@ -25,6 +29,10 @@ export const HeaderFirstImages = {
 
 export const SidebarImages = {
     FriklyWhite,
+    Hardware,
+    Bath,
+    Appliances,
+    Laminates,
 }
 
 export const HeaderSecondImages = {

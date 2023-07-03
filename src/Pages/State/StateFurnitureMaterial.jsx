@@ -1,24 +1,24 @@
 import React from 'react'
 
-import Furnitur1 from '../../assets/state/Furniture1.png';
-import Furnitur2 from '../../assets/state/Furniture2.png';
-import Furnitur3 from '../../assets/state/Furniture3.png';
-import Furnitur4 from '../../assets/state/Furniture4.png';
-import Furnitur5 from '../../assets/state/Furniture5.png';
+import Furnitur1 from '../../assets/state/Furniture1.webp';
+import Furnitur2 from '../../assets/state/Furniture2.webp';
+import Furnitur3 from '../../assets/state/Furniture3.webp';
+import Furnitur4 from '../../assets/state/Furniture4.webp';
+import Furnitur5 from '../../assets/state/Furniture5.webp';
 
-import Electronics1 from '../../assets/state/Electronics1.png';
-import Electronics2 from '../../assets/state/Electronics2.png';
-import Electronics3 from '../../assets/state/Electronics3.png';
-import Electronics4 from '../../assets/state/Electronics4.png';
+import Electronics1 from '../../assets/state/Electronics1.webp';
+import Electronics2 from '../../assets/state/Electronics2.webp';
+import Electronics3 from '../../assets/state/Electronics3.webp';
+import Electronics4 from '../../assets/state/Electronics4.webp';
 
-import Plumbing1 from '../../assets/state/Plumbing1.png';
-import Plumbing2 from '../../assets/state/Plumbing2.png';
-import Plumbing3 from '../../assets/state/Plumbing3.png';
-import Plumbing4 from '../../assets/state/Plumbing4.png';
+import Plumbing1 from '../../assets/state/Plumbing1.webp';
+import Plumbing2 from '../../assets/state/Plumbing2.webp';
+import Plumbing3 from '../../assets/state/Plumbing3.webp';
+import Plumbing4 from '../../assets/state/Plumbing4.webp';
 
-import Paint1 from '../../assets/state/Paint1.png';
-import Paint2 from '../../assets/state/Paint2.png';
-import Paint3 from '../../assets/state/Paint3.png';
+import Paint1 from '../../assets/state/Paint1.webp';
+import Paint2 from '../../assets/state/Paint2.webp';
+import Paint3 from '../../assets/state/Paint3.webp';
 
 
 const StateFurnitureMaterial = ({image, heading, subHeading}) => {
