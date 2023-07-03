@@ -9,7 +9,7 @@ const Products = () => {
     return (
         <div className='products-page'>
             <div className="products-nav">
-                <p className='products-nav1'>Home &gt; Laminates and Mica &gt; <span>Marbel and Stone </span> </p>
+                {/* <p  className='products-nav1'>Home &gt; Laminates and Mica &gt; <span>Marbel and Stone </span> </p> */}
                 <FilterNav>
                     <span className='span-1'>Filter By</span> 
                     <button className='btn-1'>Category</button>

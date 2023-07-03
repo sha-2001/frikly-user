@@ -10,24 +10,21 @@ import Footer from './components/Footer/Footer';
 import State from './Pages/State/State';
 import Products from './Pages/Product/Products';
 import SingleProduct from './Pages/Product/SingleProduct';
+import Brand from './Pages/Brand/Brand';
 
 
 function App() {
 
-  const [onPayment, setOnPayment] = useState(true)
-
-  let paymentOpen = () => { setOnPayment(false) }
-  let paymentClose = () => { setOnPayment(true) }
-
   return (
     <div className="App">
       <BrowserRouter>
-        {(onPayment) ? <Header /> : console.log('hello')}
+        <Header />
         <Routes>
-          <Route exact path='/' element={<Home paymentClose={paymentClose} />} />
+          <Route exact path='/' element={<Home/>} />
           <Route exact path='/state' element={<State/>} />
           <Route exact path='/products' element={<Products/>} />
           <Route exact path='/singleproduct' element={<SingleProduct/>} />
+          <Route exact path='/brands' element={<Brand/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

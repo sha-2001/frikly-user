@@ -108,7 +108,7 @@ export const FilterNav = styled.div`
   display : flex;
   align-items : center;
   padding-left : 4%;
-  padding-right : 4%;
+  padding-right : 5%;
 
   .btn-1, .btn-2{
     height : 40px;
