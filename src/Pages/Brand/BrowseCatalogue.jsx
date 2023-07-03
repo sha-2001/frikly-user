@@ -5,10 +5,10 @@ import { CatalogeImages } from "./BrandImages";
 
 const BrowseCatalogue = () => {
   useEffect(() => {
-    const slider = document.querySelector("[data-slider]");
-    const track = slider.querySelector("[data-slider-track]");
-    const prev = slider.querySelector("[data-slider-prev]");
-    const next = slider.querySelector("[data-slider-next]");
+    const slider = document.querySelector("[data-slider1]");
+    const track = slider.querySelector("[data-slider-track1]");
+    const prev = slider.querySelector("[data-slider-prev1]");
+    const next = slider.querySelector("[data-slider-next1]");
 
     if (track && prev && next) {
       const slideWidth = track.firstElementChild.offsetWidth;
@@ -53,8 +53,8 @@ const BrowseCatalogue = () => {
       <BrowseCatalogueContainer>
         <p className="categories-heading"> Browse Catalogue</p>
         <div class="container">
-          <div class="slider" data-slider>
-            <ul class="slider__track" data-slider-track>
+          <div class="slider" data-slider1>
+            <ul class="slider__track" data-slider-track1>
               <li>
                 <div class="slide">
                   <img src={CatalogeImages.Cataloge1} alt=".." />
@@ -90,10 +90,10 @@ const BrowseCatalogue = () => {
               </li>
             </ul>
             <div className="slider__buttons d-lg-none">
-              <button className="slider__button btn1" data-slider-prev disabled>
+              <button className="slider__button btn1" data-slider-prev1 disabled>
                 <BsChevronLeft size={18} color="white" />
               </button>
-              <button className="slider__button btn2" data-slider-next>
+              <button className="slider__button btn2" data-slider-next1>
                 <BsChevronRight size={18} color="white" />
               </button>
             </div>
