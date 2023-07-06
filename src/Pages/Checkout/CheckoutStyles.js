@@ -16,7 +16,9 @@ export const CheckoutNav = styled.div`
     height: 9vh;
   }
 `;
-export const CheckoutBody = styled.div`
+// //////////////////////////// Checkout 1 ////////////////////////////////////////////////////////
+
+export const Checkout1Body = styled.div`
   display: flex;
   gap: 3%;
   height: 100%;
@@ -105,14 +107,14 @@ export const CartItem = styled.div`
   display: flex;
   padding-top: 0.8rem;
   margin-bottom: 2.2%;
-  table{
+  table {
     width: 100%;
-    border: 0.739px solid #C6AC8F;
+    border: 0.739px solid #c6ac8f;
   }
-  td{
+  td {
     width: 33.3%;
   }
-  .count-result{
+  .count-result {
     background: white;
   }
   .cart-item-img {
@@ -234,7 +236,7 @@ export const PriceDetails = styled.div`
   table {
     width: 100%;
   }
-  tr{
+  tr {
     height: 2rem;
   }
   .price-details-heading {
@@ -352,3 +354,60 @@ export const PaymentMethods = styled.div`
     text-transform: uppercase;
   }
 `;
+
+// //////////////////////////// Checkout 2 ////////////////////////////////////////////////////////////
+
+export const Checkout2Body = styled(Checkout1Body)`
+  height: 105vh;
+  text-align: start;
+`;
+export const Shipping = styled.div`
+  width: 65%;
+  label {
+    color: #001c30;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .row {
+    margin-bottom: 2%;
+  }
+  input{
+    color: #001c30;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  input::placeholder {
+    color: #c8c9cb;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  h5 {
+    color: #001c30;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    border-bottom: 2px solid #F4F5F5;
+    padding: .5rem;
+  }
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+`;
+export const PriceSummaryCheck2 = styled(PriceSummary)`
+  height: 75%;
+`;
+
+// /////////////////////////// 
