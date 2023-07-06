@@ -10,10 +10,27 @@ export const CheckoutNav = styled.div`
   .checkout-nav1 {
     background-color: #eae0d5;
     height: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .secure-login{
+    display: flex;
+    align-items: center;
   }
   .checkout-nav2 {
     background-color: #f4f5f5;
     height: 9vh;
+  }
+  .logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  }
+  img{
+    width: 7rem;
+    height: 2.5rem;
   }
 `;
 // //////////////////////////// Checkout 1 ////////////////////////////////////////////////////////
@@ -376,7 +393,7 @@ export const Shipping = styled.div`
   .row {
     margin-bottom: 2%;
   }
-  input{
+  input {
     color: #001c30;
     font-family: Montserrat;
     font-size: 0.875rem;
@@ -399,8 +416,8 @@ export const Shipping = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    border-bottom: 2px solid #F4F5F5;
-    padding: .5rem;
+    border-bottom: 2px solid #f4f5f5;
+    padding: 0.5rem;
   }
   @media (max-width: 1100px) {
     width: 100%;
@@ -410,4 +427,51 @@ export const PriceSummaryCheck2 = styled(PriceSummary)`
   height: 75%;
 `;
 
-// /////////////////////////// 
+// /////////////////////////// Checkout 3 //////////////////////////////////////////////////////////////
+
+export const Checkout3Body = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .phone-number-text {
+    color: #001c30;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .container {
+    width: 40%;
+    height: 35vh;
+    padding: 1rem;
+  }
+  .signin-terms {
+    color: #717378;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .signin-terms span {
+    color: #001c30;
+    font-weight: 500;
+  }
+  button {
+    background-color: #001c30;
+    height: 90%;
+    width: 100%;
+  }
+  #basic-addon1 {
+    background-color: white;
+  }
+  .phone-input {
+    border-radius: 0.25rem 0.25rem 0.25rem 0.1905rem;
+    border: 1px solid #001c30;
+    height: 90%;
+  }
+`;
