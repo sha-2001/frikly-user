@@ -15,7 +15,7 @@ export const CheckoutNav = styled.div`
     justify-content: space-between;
     display: flex;
   }
-  .secure-login{
+  .secure-login {
     display: flex;
     align-items: center;
   }
@@ -24,17 +24,35 @@ export const CheckoutNav = styled.div`
     height: 9vh;
   }
   .logo-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
-  img{
+  img {
     width: 7rem;
     height: 2.5rem;
   }
 
-  @media (max-width : 768px){
+  @media (max-width: 768px) {
     display: none;
+  }
+`;
+export const CheckoutMobileNav = styled.div`
+  display: none;
+  height: 20vh;
+  margin-bottom : 1rem;
+  .mobile-logo-part {
+    height: 8vh;
+    background: #22333b;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mobile-progress-bar{
+    height: 12vh;
+    background: #F4F5F5;
+  }
+
+  @media (max-width: 700px) {
+    display: block;
   }
 `;
 // //////////////////////////// Checkout 1 ////////////////////////////////////////////////////////
@@ -47,7 +65,7 @@ export const Checkout1Body = styled.div`
   @media (max-width: 1100px) {
     flex-wrap: wrap;
   }
-  @media (max-width : 600px){
+  @media (max-width: 600px) {
     height: fit-content;
   }
 `;
@@ -68,8 +86,8 @@ export const PriceSummary = styled.div`
   @media (max-width: 1100px) {
     width: 100%;
   }
-  @media (max-width : 700px){
-    margin-top : 2rem;
+  @media (max-width: 700px) {
+    margin-top: 2rem;
   }
 `;
 export const OfferList = styled.div`
@@ -77,7 +95,7 @@ export const OfferList = styled.div`
   border-radius: 0.25rem;
   border: 1px solid #f4f5f5;
   height: 30%;
-  
+
   padding: 0.5rem 1.5rem;
   .offerlist-heading {
     text-align: left;
@@ -106,7 +124,7 @@ export const OfferList = styled.div`
     font-weight: 600;
     color: #eb2606;
   }
-  @media (max-width : 700px){
+  @media (max-width: 700px) {
     height: fit-content;
     padding: 0px;
   }
@@ -224,23 +242,24 @@ export const CartItem = styled.div`
     margin-left: 3%;
     color: #10a728;
   }
-  @media (max-width : 700px){
-    .cart-item-count{
+  @media (max-width: 700px) {
+    .cart-item-count {
       display: none;
     }
-    .cart-item-count1,.cart-item-count3{
+    .cart-item-count1,
+    .cart-item-count3 {
       display: none;
     }
     .cart-item-img {
-    width: 30%;
-  }
-  .cart-item-delivery-span{
-    display: block;
-    margin : 0;
-  }
-  .cart-item-details {
-    width: 70%;
-  }
+      width: 30%;
+    }
+    .cart-item-delivery-span {
+      display: block;
+      margin: 0;
+    }
+    .cart-item-details {
+      width: 70%;
+    }
   }
 `;
 export const Coupons = styled.div`
@@ -279,8 +298,8 @@ export const Coupons = styled.div`
     top: 20%;
     right: 0%;
   }
-  @media (max-width : 700px){
-    padding : 5px;
+  @media (max-width: 700px) {
+    padding: 5px;
   }
 `;
 export const PriceDetails = styled.div`
@@ -354,16 +373,16 @@ export const Pincode = styled.div`
     font-size: 0.875rem;
     font-weight: 500;
   }
-  @media (max-width : 700px){
+  @media (max-width: 700px) {
     height: 20%;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    .enter-pin-code{
+    .enter-pin-code {
       padding: 0;
       height: 2.5rem;
       justify-content: center;
     }
-    input{
+    input {
       height: 2.5rem;
     }
   }
@@ -401,8 +420,8 @@ export const TotalAmount = styled.div`
   span {
     font-weight: 600;
   }
-  @media (max-width : 700px){
-    .checkout-btn{
+  @media (max-width: 700px) {
+    .checkout-btn {
       height: 3rem;
     }
   }

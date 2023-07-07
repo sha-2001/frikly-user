@@ -320,8 +320,9 @@
     margin: auto;
 }
 .brand-slide img{
-    /* width: 80%; */
-    height: 100px;
+    height: 5rem;
+    width: 9rem;
+    margin-right: 7rem;
 }
 .brands-head{
     font-weight: 400;
@@ -340,4 +341,4 @@
         font-weight: 400;
         font-size: 1rem;
     }
-}
+} 
