@@ -12,6 +12,7 @@ import Products from './Pages/Product/Products';
 import SingleProduct from './Pages/Product/SingleProduct';
 import Brand from './Pages/Brand/Brand';
 import Checkout from './Pages/Checkout/Checkout';
+import Order from './Pages/OrderTacking/Order';
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
@@ -29,6 +30,7 @@ function App() {
           <Route exact path='/singleproduct' element={<SingleProduct/>} />
           <Route exact path='/brands' element={<Brand/>}/>
           <Route exact path='/checkout' element={<Checkout handleCheckout = {handleCheckout}  />}/>
+          <Route exact path='/track_order' element={<Order/>}/>
         </Routes>
         {showHeader && <Footer />}
       </BrowserRouter>
